@@ -1,0 +1,27 @@
+.section-brands{
+    height: 30vh;
+    
+}
+
+.brands{
+    height: 100%;
+    color:$color-grey-light-1;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+
+    &-box{
+        display: grid;
+        grid-column: span 1;
+        position: relative;
+        
+    }
+
+    &-img{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+    }
+}

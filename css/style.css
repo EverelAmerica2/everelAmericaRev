@@ -10,23 +10,66 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #131313; }
+
+.margin-bottom-medium {
+  margin-bottom: 3rem; }
 
 .margin-bottom-small {
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 a {
   text-decoration: none;
   color: #aaa; }
 
+.row {
+  max-width: 100%;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 0rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 0rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 0.3rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 0rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 0.3rem) / 2);
+    display: inline-block; }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 0.3rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 0.3rem) / 3) + 0.3rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 0.3rem) / 4);
+    display: inline-block; }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 0.3rem) / 4) + 0.3rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 0.3rem) / 4) + 2 * 0.3rem); }
+
 .section-header {
-  height: 98vh;
+  height: 100vh;
   background-image: linear-gradient(to left, rgba(16, 29, 44, 0.8), rgba(16, 29, 44, 0.9)), url("../img/Driving-a-Mercedes.jpg");
   background-size: cover;
   background-position: top;
   position: relative; }
 
 .header {
+  height: 100%;
   color: #aaa;
   padding: 2rem 3rem;
   line-height: 1.5; }
@@ -61,3 +104,97 @@ a {
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(270deg); }
+
+.section-overview {
+  color: #aaa;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: .5rem;
+  height: 98vh; }
+
+.overview-box {
+  height: 45vh;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 2rem 2.5rem; }
+  .overview-box-top-1 {
+    background-image: url("../img/Canva - Black Red and Grey Rectangular Entertainment Console.jpg");
+    opacity: .5;
+    color: white;
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 2; }
+  .overview-box-top-2 {
+    background-image: url("../img/Canva - Black Transistor Beside Capacitor.jpg");
+    opacity: .5;
+    color: white;
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 2; }
+  .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url("../img/Canva - Empty Concrete Building.jpg"); }
+
+.overview-title-big {
+  font-size: 4rem; }
+
+.overview-title-small {
+  font-size: 3rem; }
+
+.overview-content {
+  font-size: 2.5rem; }
+
+.section-brands {
+  height: 30vh; }
+
+.brands {
+  height: 100%;
+  color: #f9f7f6;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative; }
+  .brands-box {
+    display: grid;
+    grid-column: span 1;
+    position: relative; }
+  .brands-img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; }
+
+.footer {
+  padding: 2rem;
+  height: 40vh;
+  background-color: #101d2c;
+  color: #f9f7f6;
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5rem;
+  line-height: 1.5;
+  overflow: hidden; }
+  .footer-box1, .footer-box2 {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+    margin-right: auto;
+    margin-left: auto; }
+  .footer-box3 {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 2;
+    color: #aaa;
+    margin: auto; }
+  .footer-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.8rem;
+    margin-bottom: 1.5rem; }

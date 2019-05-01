@@ -1,0 +1,61 @@
+.section-overview{
+    color:$color-grey-light-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: .5rem;
+    height: 98vh;
+}
+
+.overview{
+
+    &-box{
+        height:45vh;    //need to adjust
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        padding: 2rem 2.5rem;
+
+        &-top{
+            &-1{
+                background-image:url('../img/Canva\ -\ Black\ Red\ and\ Grey\ Rectangular\ Entertainment\ Console.jpg');
+                opacity: .5;
+                color: white;
+                display: grid;
+                grid-row: span 1;
+                grid-column: span 2;
+            }
+            &-2{
+                background-image:url('../img/Canva\ -\ Black\ Transistor\ Beside\ Capacitor.jpg');
+                opacity: .5;
+                color:white;
+                display: grid;
+                grid-row: span 1;
+                grid-column: span 2;
+            }
+        }
+
+        &-bottom{
+            &-1,&-2,&-3,&-4{
+                display: grid;
+                grid-row: span 1;
+                grid-column: span 1;
+                background-image:linear-gradient(to left, rgba($color-primary,0.9), rgba($color-primary, 0.9)), url('../img/Canva\ -\ Empty\ Concrete\ Building.jpg');
+                
+            }
+        }
+    }
+
+    &-title-big{
+        font-size: 4rem
+    }
+
+    &-title-small{
+        font-size: 3rem;
+    }
+
+    &-content{
+        font-size: 2.5rem;
+    }
+}
