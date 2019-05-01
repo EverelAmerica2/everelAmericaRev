@@ -1,0 +1,45 @@
+//color variables
+$color-primary: #101d2c;
+$color-primary-light:#244569;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-3: #dfdede;
+$color-grey-light-2: #aaa;
+
+
+//initial setup
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    // @include respond(tab-land) { 
+    //     font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    // }
+
+    // @include respond(tab-port) { 
+    //     font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    // }
+    
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+.margin-bottom-small{
+    margin-bottom: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color:$color-grey-light-2;
+}

@@ -1,0 +1,88 @@
+.section-header{
+    height: 98vh;
+    background-image:linear-gradient(to left, rgba($color-primary,0.8), rgba($color-primary, 0.9)),url('../img/Driving-a-Mercedes.jpg');
+    background-size: cover;     
+    background-position: top;
+    position:relative;
+}
+
+.header{
+    color:$color-grey-light-2;
+    padding:2rem 3rem;
+    line-height: 1.5;
+
+    &-logo{
+        font-size: 5rem;
+        float: left;
+    }
+
+    &-nav{
+        font-size: 2.5rem;
+        position: absolute;
+        top:2rem;
+        right:3rem;
+
+
+        &-item{
+            text-decoration: none;
+            color:$color-grey-light-2;
+
+            &:not(:last-child){
+                margin-right:1.8rem;
+            }
+        }
+    }
+
+    &-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        &-title{
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 4rem;
+            border-bottom: 0.4rem solid $color-grey-light-2;
+        }
+
+        &-text{
+            font-size: 2.5rem;
+        }
+    }
+
+    &-scroll{
+        font-size: 10rem;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(270deg);
+    }
+
+}
+
+
+
+// .header{
+//     // background-color: #101d2c;
+//     // z-index: 1;
+
+//     // &-video {
+//     //     position: absolute;
+//     //     top: 0;
+//     //     left: 0;
+//     //     height: 100%;
+//     //     width: 100%;
+//     //     z-index: -1;
+//     //     opacity: .5;
+//     //     overflow: hidden;
+
+//     //     &__content {
+//     //         height: 100%;
+//     //         width: 100%;
+//     //         object-fit: cover;
+//     //     }
+//     // }
+
+   
+// }
