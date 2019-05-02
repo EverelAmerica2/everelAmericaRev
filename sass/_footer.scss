@@ -2,13 +2,16 @@
     padding: 2rem;
     height: 40vh;
     background-color: $color-primary;
-    color: $color-grey-light-1;
+    color: $color-grey-light-2;
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 5rem;
     line-height: 1.5;
     overflow: hidden;
+    box-shadow: 0 -5px 5px rgba($color-black,.5);
+    margin-top: 1rem;
+
 
     &-box1,
     &-box2{

@@ -4,6 +4,8 @@
     background-size: cover;     
     background-position: top;
     position:relative;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 5px rgba($color-black,.5);
 }
 
 .header{
@@ -23,10 +25,13 @@
         top:2rem;
         right:3rem;
 
-
         &-item{
             text-decoration: none;
             color:$color-grey-light-2;
+
+            &:hover{
+                color: $color-white;
+            }
 
             &:not(:last-child){
                 margin-right:1.8rem;
@@ -62,7 +67,24 @@
 
 }
 
+#header-nav2{
+    display: none;
+}
 
+.sticky{
+    position: fixed;
+    top: 0rem;
+    left:0rem;
+    width: 100%;
+    padding: .7rem;
+    background-color: rgba($color-primary, 0.8);
+    z-index: 2;
+    text-transform:uppercase;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
 
 // .header{
 //     // background-color: #101d2c;

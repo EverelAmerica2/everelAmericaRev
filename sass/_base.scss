@@ -2,6 +2,8 @@
 $color-primary: #101d2c;
 $color-primary-light:#244569;
 
+$color-secondary:#f9f7f6;
+
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-3: #dfdede;
 $color-grey-light-2: #aaa;
@@ -9,6 +11,8 @@ $color-grey-light-2: #aaa;
 $color-grey-dark-1: rgb(83, 83, 83);
 $color-grey-dark-2: rgb(19, 19, 19);
 
+$color-black:#000;
+$color-white:#fff;
 
 //grid variables
 $grid-width: 100%; //114rem;
@@ -44,7 +48,6 @@ html{
 
 body {
     box-sizing: border-box;
-    background-color: $color-grey-dark-2;
 }
 
 

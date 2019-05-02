@@ -1,13 +1,52 @@
 .section-overview{
     color:$color-grey-light-2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: .5rem;
-    height: 98vh;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    // grid-gap: .5rem;
+    //height: 98vh;
+    //background-color: $color-grey-light-1;
 }
 
 .overview{
+    &-top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem 1fr;
+        grid-gap: 2rem;
+        height: 49vh;
+        background-color: $color-grey-light-1;
+        padding:4rem 6rem;
+        //box-shadow: 5px 5px 5px rgba($color-black,.5);
+
+        &-title{
+            display: grid;
+            grid-row: span 1;
+            grid-column: span 2;
+            color: $color-black;
+        }
+    }
+
+    &-bottom{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 6rem 1fr;
+        grid-gap: 2rem;
+        height: 49vh;
+        background-color: $color-white;
+        padding:3rem 6rem;
+        margin-top:1rem;
+        margin-bottom: 1rem;
+        //box-shadow: 0 5px 5px rgba($color-black,.5);
+
+        &-title{
+            display: grid;
+            grid-row: span 1;
+            grid-column: span 4;
+            color:$color-black;
+        }
+        
+    }
 
     &-box{
         height:45vh;    //need to adjust
@@ -16,6 +55,9 @@
         width: 100%;
         object-fit: cover;
         padding: 2rem 2.5rem;
+        overflow: hidden;
+        //border-radius: 5px;
+        //box-shadow: 5px 5px 5px rgba($color-black,.5);
 
         &-top{
             &-1{
@@ -24,7 +66,8 @@
                 color: white;
                 display: grid;
                 grid-row: span 1;
-                grid-column: span 2;
+                grid-column: span 1;
+                //box-shadow: 5px 5px 5px rgba($color-black,.5);
             }
             &-2{
                 background-image:url('../img/Canva\ -\ Black\ Transistor\ Beside\ Capacitor.jpg');
@@ -32,7 +75,8 @@
                 color:white;
                 display: grid;
                 grid-row: span 1;
-                grid-column: span 2;
+                grid-column: span 1;
+                //box-shadow: 5px 5px 5px rgba($color-black,.5);
             }
         }
 
@@ -41,7 +85,7 @@
                 display: grid;
                 grid-row: span 1;
                 grid-column: span 1;
-                background-image:linear-gradient(to left, rgba($color-primary,0.9), rgba($color-primary, 0.9)), url('../img/Canva\ -\ Empty\ Concrete\ Building.jpg');
+                background-image:linear-gradient(to left, rgba($color-primary,0.7), rgba($color-primary, 0.7)), url('../img/Canva\ -\ Empty\ Concrete\ Building.jpg');
                 
             }
         }
@@ -56,6 +100,6 @@
     }
 
     &-content{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }

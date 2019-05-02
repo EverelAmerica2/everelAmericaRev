@@ -10,8 +10,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  box-sizing: border-box;
-  background-color: #131313; }
+  box-sizing: border-box; }
 
 .margin-bottom-medium {
   margin-bottom: 3rem; }
@@ -66,7 +65,9 @@ a {
   background-image: linear-gradient(to left, rgba(16, 29, 44, 0.8), rgba(16, 29, 44, 0.9)), url("../img/Driving-a-Mercedes.jpg");
   background-size: cover;
   background-position: top;
-  position: relative; }
+  position: relative;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
 
 .header {
   height: 100%;
@@ -84,6 +85,8 @@ a {
     .header-nav-item {
       text-decoration: none;
       color: #aaa; }
+      .header-nav-item:hover {
+        color: #fff; }
       .header-nav-item:not(:last-child) {
         margin-right: 1.8rem; }
   .header-content {
@@ -105,13 +108,55 @@ a {
     left: 50%;
     transform: translate(-50%, -50%) rotate(270deg); }
 
-.section-overview {
-  color: #aaa;
+#header-nav2 {
+  display: none; }
+
+.sticky {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  padding: .7rem;
+  background-color: rgba(16, 29, 44, 0.8);
+  z-index: 2;
+  text-transform: uppercase;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: .5rem;
-  height: 98vh; }
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center; }
+
+.section-overview {
+  color: #aaa; }
+
+.overview-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5rem 1fr;
+  grid-gap: 2rem;
+  height: 49vh;
+  background-color: #f9f7f6;
+  padding: 4rem 6rem; }
+  .overview-top-title {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 2;
+    color: #000; }
+
+.overview-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 6rem 1fr;
+  grid-gap: 2rem;
+  height: 49vh;
+  background-color: #fff;
+  padding: 3rem 6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  .overview-bottom-title {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 4;
+    color: #000; }
 
 .overview-box {
   height: 45vh;
@@ -119,26 +164,27 @@ a {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  padding: 2rem 2.5rem; }
+  padding: 2rem 2.5rem;
+  overflow: hidden; }
   .overview-box-top-1 {
     background-image: url("../img/Canva - Black Red and Grey Rectangular Entertainment Console.jpg");
     opacity: .5;
     color: white;
     display: grid;
     grid-row: span 1;
-    grid-column: span 2; }
+    grid-column: span 1; }
   .overview-box-top-2 {
     background-image: url("../img/Canva - Black Transistor Beside Capacitor.jpg");
     opacity: .5;
     color: white;
     display: grid;
     grid-row: span 1;
-    grid-column: span 2; }
+    grid-column: span 1; }
   .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
     display: grid;
     grid-row: span 1;
     grid-column: span 1;
-    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url("../img/Canva - Empty Concrete Building.jpg"); }
+    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url("../img/Canva - Empty Concrete Building.jpg"); }
 
 .overview-title-big {
   font-size: 4rem; }
@@ -147,18 +193,27 @@ a {
   font-size: 3rem; }
 
 .overview-content {
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .section-brands {
-  height: 30vh; }
+  height: 40vh;
+  background-color: #f9f7f6;
+  padding: 4rem 6rem;
+  position: relative; }
 
 .brands {
-  height: 100%;
-  color: #f9f7f6;
+  height: 70%;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #aaa;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  position: relative; }
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%; }
   .brands-box {
     display: grid;
     grid-column: span 1;
@@ -168,18 +223,53 @@ a {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%; }
+  .brands-title {
+    position: absolute;
+    top: 2rem;
+    left: 6rem; }
+
+/* Next & previous buttons */
+.prev, .next {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #aaa;
+  font-weight: bold;
+  font-size: 3rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 2.5rem;
+  border-radius: 3px 0 0 3px; }
+
+.prev {
+  left: 2.5rem;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .footer {
   padding: 2rem;
   height: 40vh;
   background-color: #101d2c;
-  color: #f9f7f6;
+  color: #aaa;
   font-size: 1.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 5rem;
   line-height: 1.5;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 1rem; }
   .footer-box1, .footer-box2 {
     display: grid;
     grid-row: span 1;
