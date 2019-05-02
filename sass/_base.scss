@@ -1,0 +1,82 @@
+//color variables
+$color-primary: #101d2c;
+$color-primary-light:#244569;
+
+$color-secondary:#f9f7f6;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-3: #dfdede;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: rgb(83, 83, 83);
+$color-grey-dark-2: rgb(19, 19, 19);
+
+$color-black:#000;
+$color-white:#fff;
+
+//grid variables
+$grid-width: 100%; //114rem;
+$gutter-vertical: 0rem;
+$gutter-vertical-small: 0rem;
+$gutter-horizontal: .3rem;
+
+
+
+
+//initial setup
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    // @include respond(tab-land) { 
+    //     font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    // }
+
+    // @include respond(tab-port) { 
+    //     font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    // }
+    
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+.margin-bottom-medium{
+    margin-bottom: 3rem;
+}
+
+.margin-bottom-small{
+    margin-bottom: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color:$color-grey-light-2;
+}
+
+.btn-learnMore{
+    line-height:1.5;
+    background:none;
+    padding:.5rem 1rem;
+    color:inherit;
+    border: .2rem solid $color-grey-light-2;
+    border-radius: 3px;
+    text-decoration: underline;
+    margin:2rem 0;
+    
+    &:hover{
+        background-color: $color-grey-dark-1;
+        cursor:pointer;
+    }
+
+}

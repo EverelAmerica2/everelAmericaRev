@@ -1,0 +1,122 @@
+.section-header{
+    height: 100vh;
+    background-image:linear-gradient(to left, rgba($color-primary,0.8), rgba($color-primary, 0.9)),url('../img/Driving-a-Mercedes.jpg');
+    background-size: cover;     
+    background-position: top;
+    position:relative;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 5px rgba($color-black,.5);
+}
+
+.header{
+    height: 100%;
+    color:$color-grey-light-2;
+    padding:2rem 3rem;
+    line-height: 1.5;
+
+    &-logo{
+        font-size: 5rem;
+        float: left;
+    }
+
+    &-nav{
+        font-size: 2.5rem;
+        position: absolute;
+        top:2rem;
+        right:3rem;
+
+        &-item{
+            text-decoration: none;
+            color:$color-grey-light-2;
+
+            &:hover{
+                color: $color-white;
+            }
+
+            &:not(:last-child){
+                margin-right:1.8rem;
+            }
+        }
+    }
+
+    &-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        &-title{
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 4rem;
+            border-bottom: 0.4rem solid $color-grey-light-2;
+        }
+
+        &-text{
+            font-size: 2.5rem;
+        }
+    }
+
+    &-scroll{
+        font-size: 10rem;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(270deg);
+        background:none;
+        border:none;
+        color:inherit;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &:focus{
+            outline:none;
+        }
+    }
+
+}
+
+#header-nav2{
+    display: none;
+}
+
+.sticky{
+    position: fixed;
+    top: 0rem;
+    left:0rem;
+    width: 100%;
+    padding: .7rem;
+    background-color: rgba($color-primary, 0.8);
+    z-index: 2;
+    text-transform:uppercase;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+// .header{
+//     // background-color: #101d2c;
+//     // z-index: 1;
+
+//     // &-video {
+//     //     position: absolute;
+//     //     top: 0;
+//     //     left: 0;
+//     //     height: 100%;
+//     //     width: 100%;
+//     //     z-index: -1;
+//     //     opacity: .5;
+//     //     overflow: hidden;
+
+//     //     &__content {
+//     //         height: 100%;
+//     //         width: 100%;
+//     //         object-fit: cover;
+//     //     }
+//     // }
+
+   
+// }
