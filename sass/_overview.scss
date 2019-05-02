@@ -62,8 +62,8 @@
         &-top{
             &-1{
                 background-image:url('../img/Canva\ -\ Black\ Red\ and\ Grey\ Rectangular\ Entertainment\ Console.jpg');
-                opacity: .5;
-                color: white;
+                opacity: .7;
+                color: $color-white;
                 display: grid;
                 grid-row: span 1;
                 grid-column: span 1;
@@ -71,8 +71,8 @@
             }
             &-2{
                 background-image:url('../img/Canva\ -\ Black\ Transistor\ Beside\ Capacitor.jpg');
-                opacity: .5;
-                color:white;
+                opacity: .7;
+                color:$color-white;
                 display: grid;
                 grid-row: span 1;
                 grid-column: span 1;

@@ -22,6 +22,19 @@ a {
   text-decoration: none;
   color: #aaa; }
 
+.btn-learnMore {
+  line-height: 1.5;
+  background: none;
+  padding: .5rem 1rem;
+  color: inherit;
+  border: 0.2rem solid #aaa;
+  border-radius: 3px;
+  text-decoration: underline;
+  margin: 2rem 0; }
+  .btn-learnMore:hover {
+    background-color: #535353;
+    cursor: pointer; }
+
 .row {
   max-width: 100%;
   margin: 0 auto; }
@@ -106,7 +119,14 @@ a {
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(270deg); }
+    transform: translate(-50%, -50%) rotate(270deg);
+    background: none;
+    border: none;
+    color: inherit; }
+    .header-scroll:hover {
+      cursor: pointer; }
+    .header-scroll:focus {
+      outline: none; }
 
 #header-nav2 {
   display: none; }
@@ -168,15 +188,15 @@ a {
   overflow: hidden; }
   .overview-box-top-1 {
     background-image: url("../img/Canva - Black Red and Grey Rectangular Entertainment Console.jpg");
-    opacity: .5;
-    color: white;
+    opacity: .7;
+    color: #fff;
     display: grid;
     grid-row: span 1;
     grid-column: span 1; }
   .overview-box-top-2 {
     background-image: url("../img/Canva - Black Transistor Beside Capacitor.jpg");
-    opacity: .5;
-    color: white;
+    opacity: .7;
+    color: #fff;
     display: grid;
     grid-row: span 1;
     grid-column: span 1; }

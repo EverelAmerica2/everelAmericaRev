@@ -28,7 +28,9 @@ function navCheckbox() {
  
 */
 
-
+function scrollArrow(){
+    window.scroll(0,500);
+}
 
 
 function showSlides(n, viewPort2) {
