@@ -18,7 +18,7 @@ $color-white:#fff;
 $grid-width: 100%; //114rem;
 $gutter-vertical: 0rem;
 $gutter-vertical-small: 0rem;
-$gutter-horizontal: .3rem;
+$gutter-horizontal: 2rem;
 
 
 
@@ -79,4 +79,12 @@ a{
         cursor:pointer;
     }
 
+}
+
+.title-big{
+    font-size: 5rem;
+}
+
+.text-center{
+    text-align: center;
 }

@@ -56,7 +56,7 @@ a {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 2rem; }
+      margin-right: 0.3rem; }
       @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
@@ -65,28 +65,36 @@ a {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
-    width: calc((100% - 2rem) / 2);
+    width: calc((100% - 0.3rem) / 2);
     display: inline-block; }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 2rem) / 3); }
+    width: calc((100% - 2 * 0.3rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
+    width: calc(2 * ((100% - 2 * 0.3rem) / 3) + 0.3rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 2rem) / 4);
+    width: calc((100% - 3 * 0.3rem) / 4);
     display: inline-block; }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 2rem) / 4) + 2rem); }
+    width: calc(2 * ((100% - 3 * 0.3rem) / 4) + 0.3rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
+    width: calc(3 * ((100% - 3 * 0.3rem) / 4) + 2 * 0.3rem); }
 
 .grid-row-3 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
   width: 80%;
   margin: 3rem 5rem;
-  text-align: center; }
+  justify-items: center;
+  align-items: center; }
   .grid-row-3 .grid-col-1-3 {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
     width: 80%;
-    width: calc((100% - 2 * 2rem) / 3);
-    display: inline-block; }
+    justify-items: center;
+    align-items: center; }
 
 .section-header {
   height: 100vh;
@@ -164,19 +172,47 @@ a {
   color: #aaa; }
 
 .overview-top {
+  display: -ms-grid;
+  -ms-grid-template-columns: 1fr 1fr;
+  -ms-grid-template-rows: 5rem 1fr;
+  -ms-grid-gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5rem 1fr;
+  grid-gap: 2rem;
   height: 49vh;
   background-color: #f9f7f6;
   padding: 4rem 6rem; }
   .overview-top-title {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: span 1;
+    -ms-grid-column: span 2;
+    grid-row: span 1;
+    grid-column: span 2;
     color: #000; }
 
 .overview-bottom {
+  display: -ms-grid;
+  -ms-grid-template-columns: repeat(4, 1fr);
+  -ms-grid-template-rows: 6rem 1fr;
+  -ms-grid-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 6rem 1fr;
+  grid-gap: 2rem;
   height: 49vh;
   background-color: #fff;
   padding: 3rem 6rem;
   margin-top: 1rem;
   margin-bottom: 1rem; }
   .overview-bottom-title {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: span 1;
+    -ms-grid-column: span 4;
+    grid-row: span 1;
+    grid-column: span 4;
     color: #000; }
 
 .overview-box {
@@ -191,21 +227,30 @@ a {
     background-image: url("../img/Canva - Black Red and Grey Rectangular Entertainment Console.jpg");
     opacity: .7;
     color: #fff;
-    width: calc((100% - 3rem) / 2);
-    display: inline-block;
-    margin-right: 2rem; }
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: span 1;
+    -ms-grid-column: span 1;
+    grid-row: span 1;
+    grid-column: span 1; }
   .overview-box-top-2 {
     background-image: url("../img/Canva - Black Transistor Beside Capacitor.jpg");
     opacity: .7;
     color: #fff;
-    width: calc((100% - 3rem) / 2);
-    display: inline-block; }
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: span 1;
+    -ms-grid-column: span 1;
+    grid-row: span 1;
+    grid-column: span 1; }
   .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
-    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url("../img/Canva - Empty Concrete Building.jpg");
-    width: calc((100% - 3 * 3rem) / 4);
-    display: inline-block; }
-    .overview-box-bottom-1:not(:last-child), .overview-box-bottom-2:not(:last-child), .overview-box-bottom-3:not(:last-child), .overview-box-bottom-4:not(:last-child) {
-      margin-right: 2rem; }
+    display: -ms-grid;
+    -ms-grid-row: span 1;
+    -ms-grid-column: span 1;
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url("../img/Canva - Empty Concrete Building.jpg"); }
 
 .overview-title-big {
   font-size: 4rem; }
@@ -228,17 +273,19 @@ a {
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #aaa;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 60%;
   left: 50%; }
   .brands-box {
-    position: relative;
-    margin-top: 13rem;
-    width: calc((100% - 3 * 3rem) / 4);
-    display: inline-block; }
-    .brands-box:not(:last-child) {
-      margin-right: 2rem; }
+    display: grid;
+    -ms-grid-column: span 1;
+    grid-column: span 1;
+    position: relative; }
   .brands-img {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -279,25 +326,30 @@ a {
   background-color: rgba(0, 0, 0, 0.8); }
 
 .footer {
-  width: 100%;
   padding: 2rem;
   height: 40vh;
   background-color: #101d2c;
   color: #aaa;
   font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5rem;
   line-height: 1.5;
   overflow: hidden;
   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
   margin-top: 1rem; }
   .footer-box1, .footer-box2 {
-    width: calc((100% - 2rem) / 2);
-    display: inline-block;
-    height: 80%;
-    float: left;
-    padding: 1rem 4rem; }
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+    margin-right: auto;
+    margin-left: auto; }
   .footer-box3 {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 2;
     color: #aaa;
-    text-align: center; }
+    margin: auto; }
   .footer-title {
     font-size: 1.8rem;
     font-weight: 700;
@@ -316,14 +368,10 @@ a {
   grid-template-rows: 80% 20%;
   grid-template-columns: 1fr; }
 
-.box-img img {
-  margin: auto; }
-
 .box-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #000;
-  text-align: center; }
+  color: #000; }
 
 .section-product-category {
   width: 100%;
@@ -350,25 +398,18 @@ a {
   margin: auto; }
 
 .product-item-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   width: 80%;
-  margin: 5rem 8rem;
-  padding: 2rem;
-  text-align: center; }
+  justify-items: center;
+  margin: 4rem 6rem; }
 
 .product-item-header {
   height: 10rem; }
 
-.product-item-img {
-  width: calc((100% - 2rem) / 2);
-  display: inline-block;
-  float: left; }
-
 .product-item-content {
-  color: #000;
-  width: calc((100% - 2rem) / 2);
-  display: inline-block;
-  float: left;
-  text-align: left; }
+  color: #000; }
   .product-item-content li {
     font-size: 1.8rem;
     line-height: 1.5; }
