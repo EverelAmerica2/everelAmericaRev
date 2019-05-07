@@ -7,7 +7,7 @@ function navSticky(x) {
     if (x.matches) {
         if (window.pageYOffset >= sticky) {
             navbar2.classList.add("sticky");
-            navbar2.style.display = 'grid';
+            navbar2.style.display = 'inline-block';
         } else {
             navbar2.classList.remove("sticky");
             navbar2.style.display = 'none';
