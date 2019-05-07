@@ -12,18 +12,29 @@
     background-color: $color-white;
     border-radius: 5px;
     border: 1px solid $color-grey-light-2;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    // display: grid;
+    // grid-template-rows: 1fr;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 60%;
     left: 50%;
 
     &-box{
-        display: grid;
-        grid-column: span 1;
+        // display: grid;
+        // grid-column: span 1;
         position: relative;
+        margin-top: 13rem;
+        width: calc((100% - 3 * 3rem) / 4);
+        display: inline-block;
+        // position: absolute;
+        // transform: translate(-50%,-50%);
+        // top: 50%;
+        
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
         
     }
 

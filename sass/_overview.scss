@@ -10,28 +10,28 @@
 
 .overview{
     &-top{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 5rem 1fr;
-        grid-gap: 2rem;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 5rem 1fr;
+        //grid-gap: 2rem;
         height: 49vh;
         background-color: $color-grey-light-1;
         padding:4rem 6rem;
         //box-shadow: 5px 5px 5px rgba($color-black,.5);
 
         &-title{
-            display: grid;
-            grid-row: span 1;
-            grid-column: span 2;
+            // display: grid;
+            // grid-row: span 1;
+            // grid-column: span 2;
             color: $color-black;
         }
     }
 
     &-bottom{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 6rem 1fr;
-        grid-gap: 2rem;
+        // display: grid;
+        // grid-template-columns: repeat(4,1fr);
+        // grid-template-rows: 6rem 1fr;
+        //grid-gap: 2rem;
         height: 49vh;
         background-color: $color-white;
         padding:3rem 6rem;
@@ -40,9 +40,9 @@
         //box-shadow: 0 5px 5px rgba($color-black,.5);
 
         &-title{
-            display: grid;
-            grid-row: span 1;
-            grid-column: span 4;
+            // display: grid;
+            // grid-row: span 1;
+            // grid-column: span 4;
             color:$color-black;
         }
         
@@ -64,28 +64,39 @@
                 background-image:url('../img/Canva\ -\ Black\ Red\ and\ Grey\ Rectangular\ Entertainment\ Console.jpg');
                 opacity: .7;
                 color: $color-white;
-                display: grid;
-                grid-row: span 1;
-                grid-column: span 1;
+                // display: grid;
+                // grid-row: span 1;
+                // grid-column: span 1;
                 //box-shadow: 5px 5px 5px rgba($color-black,.5);
+                width: calc((100% - 3rem) / 2);
+                display: inline-block;
+                margin-right:2rem;
             }
             &-2{
                 background-image:url('../img/Canva\ -\ Black\ Transistor\ Beside\ Capacitor.jpg');
                 opacity: .7;
                 color:$color-white;
-                display: grid;
-                grid-row: span 1;
-                grid-column: span 1;
+                // display: grid;
+                // grid-row: span 1;
+                // grid-column: span 1;
                 //box-shadow: 5px 5px 5px rgba($color-black,.5);
+                width: calc((100% - 3rem) / 2);
+                display: inline-block;
             }
         }
 
         &-bottom{
             &-1,&-2,&-3,&-4{
-                display: grid;
-                grid-row: span 1;
-                grid-column: span 1;
+                // display: grid;
+                // grid-row: span 1;
+                // grid-column: span 1;
                 background-image:linear-gradient(to left, rgba($color-primary,0.7), rgba($color-primary, 0.7)), url('../img/Canva\ -\ Empty\ Concrete\ Building.jpg');
+                width: calc((100% - 3 * 3rem) / 4);
+                display: inline-block;
+
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
                 
             }
         }

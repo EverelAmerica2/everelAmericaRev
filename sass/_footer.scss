@@ -1,12 +1,13 @@
 .footer{
+    width: 100%;
     padding: 2rem;
     height: 40vh;
     background-color: $color-primary;
     color: $color-grey-light-2;
     font-size: 1.6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 5rem;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr 5rem;
     line-height: 1.5;
     overflow: hidden;
     box-shadow: 0 -5px 5px rgba($color-black,.5);
@@ -15,18 +16,27 @@
 
     &-box1,
     &-box2{
-        display: grid;
-        grid-row: span 1;
-        grid-column: span 1;
-        margin-right: auto;
-        margin-left: auto;
+        // display: grid;
+        // grid-row: span 1;
+        // grid-column: span 1;
+        // margin-right: auto;
+        // margin-left: auto;
+        width: calc((100% - 2rem) / 2);
+        display: inline-block;
+        height: 80%;
+        float: left;
+        padding:1rem 4rem;
+        // &:not(:last-child) {
+        //     margin-right: 2rem;
+        // }
     }
     &-box3{
-        display: grid;
-        grid-row: span 1;
-        grid-column: span 2;
+        // display: grid;
+        // grid-row: span 1;
+        // grid-column: span 2;
         color: $color-grey-light-2;
-        margin: auto;
+        // margin: auto;
+        text-align: center; 
     }
 
     &-title{
