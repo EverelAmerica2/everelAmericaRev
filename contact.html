@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+
+    <title>Everel America &mdash; Rocker Switch, Pushbutton Switch</title>
+</head>
+
+<body class="body-container">
+    <header class="section-header">
+        <div class="header">
+            <div class="header-logo">Everel America Logo</div>
+            <nav class="header-nav" id='header-nav1'>
+                <a href="index.html" class="header-nav-item">Home</a>
+                <a href="#" class="header-nav-item">About the Company</a>
+                <a href="products.html" class="header-nav-item">Products</a>
+                <a href="#" class="header-nav-item">Distribution Network</a>
+                <a href="contact.html" class="header-nav-item">Contact Us</a>
+            </nav>
+
+            <nav class="header-nav" id='header-nav2'>
+                <a href="index.html" class="header-nav-item">Home</a>
+                <a href="#" class="header-nav-item">About the Company</a>
+                <a href="products.html" class="header-nav-item">Products</a>
+                <a href="#" class="header-nav-item">Distribution Network</a>
+                <a href="contact.html" class="header-nav-item">Contact Us</a>
+            </nav>
+
+            <div class="header-content">
+                <div class="header-content-title margin-bottom-medium">A Title</div>
+                <div class="header-content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis saepe
+                    cum, reiciendis harum amet error necessitatibus dolore illo nam est incidunt commodi ea tenetur
+                    pariatur aspernatur. Odio nisi ipsam sit.</div>
+            </div>
+
+            <button atl='' class="header-scroll" id='header-scroll' onclick='scrollArrow()'>
+
+                <!-- &#8681;
+                &#10151; -->
+                &lsaquo;
+            </button>
+        </div>
+        <!-- <div class="header-video">
+        <video class="header-video__content" autoplay muted loop>
+            <source src="img/Driving-a-Mercedes.mp4" type="video/mp4">
+            Your browser is not supported!
+        </video>
+    </div> -->
+    </header>
+
+    <main class='main' id='main'>
+        <section class="section-contact">
+            <div class="contact-form">
+                <div class="contact-form-title title-medium text-center margin-bottom-medium">Contact Us</div>
+                <form class='contact-form-content text-center' method="POST"
+                    action="https://formspree.io/everelamerica2@everelamerica.com">
+                    <input class='contact-form-name margin-bottom-xs' type="text" name="name" placeholder="Your name">
+                    <input class='contact-form-company margin-bottom-xs' type="text" name="comapny" placeholder="Your company">
+                    <input class='contact-form-number margin-bottom-xs' type="text" name="phone number" placeholder="Your phone number">
+                    <input class='contact-form-email margin-bottom-xs' type="email" name="email" placeholder="Your email">
+                    <textarea class='contact-form-msg margin-bottom-xs' name="message" placeholder="Message..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="contact-locations">
+                <div class="contact-locations-box">
+                    <div class="contact-locations-title title-medium margin-bottom-medium text-center">Our Locations</div>
+                    <div class="contact-locations-content margin-bottom-small">We have experienced representatives who are
+                            available to discuss with your requirements. Please feel free to contact us.</div>
+                    <div class="contact-locations-sub">
+                        <div class="contact-locations-sub-title title-xs margin-bottom-xs">(Headquarter) Atlanta,
+                            Georgia, US</div>
+                        <div class="contact-locations-sub-content margin-bottom-small">
+                            Tel: (678)765-8966
+                            <br />
+                            Fax: 770-216-1566
+                            <br />
+                            Email: sales@everelamerica.com
+                            <br />
+                            Location: 5095 Bristol Industrial Way, Buford, GA 30518, US
+                            <br />
+                        </div>
+                    </div>
+                    <div class="contact-locations-sub">
+                        <div class="contact-locations-sub-title title-xs margin-bottom-xs">Jacksonville, Florida, US
+                        </div>
+                        <div class="contact-locations-sub-content margin-bottom-small">
+                            Tel: (678)765-8966
+                            <br />
+                            Fax: 770-216-1566
+                            <br />
+                            Email: sales@everelamerica.com
+                            <br />
+                            Location: 5095 Bristol Industrial Way, Buford, GA 30518, US
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class='section-footer footer'>
+        <div class='footer-box1'>
+            <div>
+                <p class='footer-title'>Everel America</p>
+                <p class='footer-content'>5095 Bristol Industrial Way</p>
+                <p class='footer-content'>Buford, Georgia, 30518</p>
+                <p class='footer-title'>contact Us</p>
+                <p class='footer-content'>Phone: XXX-XXX-XXXX</p>
+                <p class='footer-content'>Email: sales@everelamerica.com</p>
+            </div>
+        </div>
+        <div class='footer-box2'>
+            <div>
+                <p class='footer-title'>Hours</p>
+                <p class='footer-content'>Mon. - Fri.: 8 am - 5 pm </p>
+                <div class='footer-logo'>Everel America Logo</div>
+            </div>
+        </div>
+        <div class='footer-box3'>Everel America, Inc. &copy; 2019</div>
+
+    </footer>
+
+    <script src='./js/index.js'></script>
+
+
+</body>
+
+</html>

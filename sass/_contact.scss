@@ -1,0 +1,88 @@
+.section-contact{
+    color: $color-grey-dark-1;
+}
+
+.contact-form{
+    padding: 2rem 4rem;
+    width:100%;
+    font-size: 1.5rem;
+    
+    &-title{
+        width:50%;
+        margin: 3rem auto;
+        color:$color-primary;
+    }
+
+    &-content{
+        width:50%;
+        margin: auto;
+    }
+
+    &-name, &-company,&-email, &-number{
+        font-size: inherit;
+        width: 70%;
+        line-height:2;
+
+    }
+
+    &-msg{
+        font-size: inherit;
+        width: 70%;
+        line-height:2;
+        height:16rem;
+        
+    }
+
+    button{
+        display: block;
+        margin:auto;
+        font-size: inherit;
+        line-height: 3rem;
+        width:6rem;
+        color:$color-grey-light-1;
+        background-color: $color-primary;
+        border: .2rem solid $color-primary;
+        border-radius: .4rem;
+        transition:.2s;
+        box-shadow: 0 .2rem .2rem rgba($color-black,.4);
+
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            transform: translateY(.1rem) scale(.95);
+            box-shadow: none;
+        }
+    }
+}
+
+.contact-locations{
+    padding: 2rem 4rem;
+    width: 100%;
+
+    &-content{
+        font-size: 1.8rem;
+    }
+
+    &-box{
+        width:50%;
+        margin: auto;
+    }
+
+    &-title{
+        color:$color-primary;
+    }
+
+    &-sub{
+
+        &-title{
+
+        }
+
+        &-content{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+
