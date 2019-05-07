@@ -50,10 +50,12 @@
             text-transform: uppercase;
             font-size: 4rem;
             border-bottom: 0.4rem solid $color-grey-light-2;
+            animation: moveInLeft .5s ease-in;
         }
 
         &-text{
             font-size: 2.5rem;
+            animation: moveInRight .5s ease-in;
         }
     }
 
@@ -122,3 +124,34 @@
 
    
 // }
+
+
+
+
+@keyframes moveInLeft {
+    0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+    80% {
+    transform: translateX(1rem); }
+    100% {
+    opacity: 1;
+    transform: translate(0); } }
+  
+@keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20rem); }
+    80% {
+      transform: translateX(-1rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } }
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem); }
+    100% {
+        opacity: 1;
+        transform: translate(0); } }
