@@ -18,6 +18,9 @@ body {
 .margin-bottom-small {
   margin-bottom: 2rem; }
 
+.margin-bottom-xs {
+  margin-bottom: 1rem; }
+
 a {
   text-decoration: none;
   color: #aaa; }
@@ -155,23 +158,23 @@ a {
   background-color: rgba(16, 29, 44, 0.8);
   z-index: 2;
   text-transform: uppercase;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  justify-items: center; }
+  display: inline-block;
+  text-align: center; }
 
 .section-overview {
   color: #aaa; }
 
 .overview-top {
-  height: 49vh;
+  height: 60vh;
+  max-height: 60vh;
   background-color: #f9f7f6;
   padding: 4rem 6rem; }
   .overview-top-title {
     color: #000; }
 
 .overview-bottom {
-  height: 49vh;
+  height: 60vh;
+  max-height: 60vh;
   background-color: #fff;
   padding: 3rem 6rem;
   margin-top: 1rem;
@@ -180,7 +183,6 @@ a {
     color: #000; }
 
 .overview-box {
-  height: 45vh;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -192,20 +194,22 @@ a {
     opacity: .7;
     color: #fff;
     width: calc((100% - 3rem) / 2);
+    float: left;
     display: inline-block;
-    margin-right: 2rem; }
+    margin-right: 2.7rem; }
   .overview-box-top-2 {
     background-image: url("../img/Canva - Black Transistor Beside Capacitor.jpg");
     opacity: .7;
     color: #fff;
     width: calc((100% - 3rem) / 2);
+    float: left;
     display: inline-block; }
   .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
     background-image: linear-gradient(to left, rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url("../img/Canva - Empty Concrete Building.jpg");
     width: calc((100% - 3 * 3rem) / 4);
     display: inline-block; }
     .overview-box-bottom-1:not(:last-child), .overview-box-bottom-2:not(:last-child), .overview-box-bottom-3:not(:last-child), .overview-box-bottom-4:not(:last-child) {
-      margin-right: 2rem; }
+      margin-right: 2.7rem; }
 
 .overview-title-big {
   font-size: 4rem; }
@@ -223,7 +227,7 @@ a {
   position: relative; }
 
 .brands {
-  height: 70%;
+  height: 60%;
   width: 90%;
   background-color: #fff;
   border-radius: 5px;
@@ -233,12 +237,30 @@ a {
   top: 60%;
   left: 50%; }
   .brands-box {
-    position: relative;
-    margin-top: 13rem;
     width: calc((100% - 3 * 3rem) / 4);
     display: inline-block; }
     .brands-box:not(:last-child) {
-      margin-right: 2rem; }
+      margin-right: 2.7rem; }
+    .brands-box-1 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 12.5%; }
+    .brands-box-2 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 37.5%; }
+    .brands-box-3 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 62.5%; }
+    .brands-box-4 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 87.5%; }
   .brands-img {
     position: absolute;
     transform: translate(-50%, -50%);

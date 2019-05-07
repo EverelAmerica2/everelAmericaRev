@@ -91,10 +91,12 @@
     background-color: rgba($color-primary, 0.8);
     z-index: 2;
     text-transform:uppercase;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: 1fr;
+    // justify-items: center;
+    display: inline-block;
+    text-align: center;
 }
 
 // .header{
