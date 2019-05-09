@@ -11,19 +11,31 @@
 .header{
     height: 100%;
     color:$color-grey-light-2;
-    padding:2rem 3rem;
+    padding:2rem 4rem;
     line-height: 1.5;
 
     &-logo{
-        font-size: 5rem;
-        float: left;
+        // font-size: 5rem;
+        //width:20rem;
+        background-image: radial-gradient(circle,rgba($color-grey-light-2,.5) 0%,rgba($color-grey-light-2,.3) 20%,rgba($color-grey-light-2,.1) 40%, rgba($color-grey-light-2, 0) 60%);
+        width:20rem;
+        height: 15rem;
+        //float: left;
+        position: relative;
+        img{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top:50%;
+            left: 50%;
+            width: 20rem;
+        }
     }
 
     &-nav{
         font-size: 2.5rem;
         position: absolute;
-        top:2rem;
-        right:3rem;
+        top:3rem;
+        right:4rem;
 
         &-item{
             text-decoration: none;
