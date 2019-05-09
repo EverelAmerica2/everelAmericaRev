@@ -1,1 +1,527 @@
-*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%;scroll-behavior:smooth}body{-webkit-box-sizing:border-box;box-sizing:border-box}.margin-bottom-medium{margin-bottom:3rem}.margin-bottom-small{margin-bottom:2rem}.margin-bottom-xs{margin-bottom:1rem}a{text-decoration:none;color:#aaa}.btn-learnMore{line-height:1.5;background:none;padding:.5rem 1rem;color:inherit;border:0.2rem solid #aaa;border-radius:3px;text-decoration:underline;margin:2rem 0}.btn-learnMore:hover{background-color:#535353;cursor:pointer}.title-big{font-size:5rem;font-weight:700}.title-medium{font-size:4rem;font-weight:700}.title-small{font-size:3rem;font-weight:700}.title-xs{font-size:2rem;font-weight:700}.text-center{text-align:center}.row{max-width:100%;margin:0 auto}.row:not(:last-child){margin-bottom:0rem}@media only screen and (max-width: 56.25em){.row:not(:last-child){margin-bottom:0rem}}@media only screen and (max-width: 56.25em){.row{max-width:50rem;padding:0 3rem}}.row [class^="col-"]{float:left}.row [class^="col-"]:not(:last-child){margin-right:2rem}@media only screen and (max-width: 56.25em){.row [class^="col-"]:not(:last-child){margin-right:0;margin-bottom:0rem}}@media only screen and (max-width: 56.25em){.row [class^="col-"]{width:100% !important}}.row .col-1-of-2{width:calc((100% - 2rem) / 2);display:inline-block}.row .col-1-of-3{width:calc((100% - 2 * 2rem) / 3)}.row .col-2-of-3{width:calc(2 * ((100% - 2 * 2rem) / 3) + 2rem)}.row .col-1-of-4{width:calc((100% - 3 * 2rem) / 4);display:inline-block}.row .col-2-of-4{width:calc(2 * ((100% - 3 * 2rem) / 4) + 2rem)}.row .col-3-of-4{width:calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem)}.grid-row-3{width:80%;margin:3rem 5rem;text-align:center}.grid-row-3 .grid-col-1-3{width:80%;width:calc((100% - 2 * 2rem) / 3);display:inline-block}.section-header{height:100vh;background-image:-webkit-gradient(linear, right top, left top, from(rgba(16,29,44,0.8)), to(rgba(16,29,44,0.9))),url("../img/Driving-a-Mercedes.jpg");background-image:linear-gradient(to left, rgba(16,29,44,0.8), rgba(16,29,44,0.9)),url("../img/Driving-a-Mercedes.jpg");background-size:cover;background-position:top;position:relative;margin-bottom:1rem;-webkit-box-shadow:0 5px 5px rgba(0,0,0,0.5);box-shadow:0 5px 5px rgba(0,0,0,0.5)}.header{height:100%;color:#aaa;padding:2rem 3rem;line-height:1.5}.header-logo{font-size:5rem;float:left}.header-nav{font-size:2.5rem;position:absolute;top:2rem;right:3rem}.header-nav-item{text-decoration:none;color:#aaa}.header-nav-item:hover{color:#fff}.header-nav-item:not(:last-child){margin-right:1.8rem}.header-content{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}.header-content-title{display:inline-block;text-transform:uppercase;font-size:4rem;border-bottom:0.4rem solid #aaa;-webkit-animation:moveInLeft .5s ease-in;animation:moveInLeft .5s ease-in}.header-content-text{font-size:2.5rem;-webkit-animation:moveInRight .5s ease-in;animation:moveInRight .5s ease-in}.header-scroll{font-size:10rem;position:absolute;top:90%;left:50%;-webkit-transform:translate(-50%, -50%) rotate(270deg);transform:translate(-50%, -50%) rotate(270deg);background:none;border:none;color:inherit}.header-scroll:hover{cursor:pointer}.header-scroll:focus{outline:none}#header-nav2{display:none}.sticky{position:fixed;top:0rem;left:0rem;width:100%;padding:.7rem;background-color:rgba(16,29,44,0.8);z-index:2;text-transform:uppercase;display:inline-block;text-align:center}@-webkit-keyframes moveInLeft{0%{opacity:0;-webkit-transform:translateX(-20rem);transform:translateX(-20rem)}80%{-webkit-transform:translateX(1rem);transform:translateX(1rem)}100%{opacity:1;-webkit-transform:translate(0);transform:translate(0)}}@keyframes moveInLeft{0%{opacity:0;-webkit-transform:translateX(-20rem);transform:translateX(-20rem)}80%{-webkit-transform:translateX(1rem);transform:translateX(1rem)}100%{opacity:1;-webkit-transform:translate(0);transform:translate(0)}}@-webkit-keyframes moveInRight{0%{opacity:0;-webkit-transform:translateX(20rem);transform:translateX(20rem)}80%{-webkit-transform:translateX(-1rem);transform:translateX(-1rem)}100%{opacity:1;-webkit-transform:translate(0);transform:translate(0)}}@keyframes moveInRight{0%{opacity:0;-webkit-transform:translateX(20rem);transform:translateX(20rem)}80%{-webkit-transform:translateX(-1rem);transform:translateX(-1rem)}100%{opacity:1;-webkit-transform:translate(0);transform:translate(0)}}@-webkit-keyframes moveInBottom{0%{opacity:0;-webkit-transform:translateY(3rem);transform:translateY(3rem)}100%{opacity:1;-webkit-transform:translate(0);transform:translate(0)}}@keyframes moveInBottom{0%{opacity:0;-webkit-transform:translateY(3rem);transform:translateY(3rem)}100%{opacity:1;-webkit-transform:translate(0);transform:translate(0)}}.section-overview{color:#aaa}.overview-top{height:49vh;background-color:#f9f7f6;padding:4rem 6rem}.overview-top-title{color:#000}.overview-bottom{height:49vh;background-color:#fff;padding:3rem 6rem;margin-top:1rem;margin-bottom:1rem}.overview-bottom-title{color:#000}.overview-box{background-size:cover;height:80%;width:100%;-o-object-fit:cover;object-fit:cover;padding:2rem 2.5rem;overflow:hidden}.overview-box-top-1{background-image:url("../img/Canva - null.jpg");opacity:.8;color:#fff;width:calc((100% - 3rem) / 2);float:left;display:inline-block;margin-right:2.7rem}.overview-box-top-2{background-image:url("../img/header-interruttori.jpg");opacity:.7;color:#fff;width:calc((100% - 3rem) / 2);float:left;display:inline-block}.overview-box-bottom-1,.overview-box-bottom-2,.overview-box-bottom-3,.overview-box-bottom-4{background-image:-webkit-gradient(linear, right top, left top, from(rgba(16,29,44,0.7)), to(rgba(16,29,44,0.7))),url("../img/Canva - Empty Concrete Building.jpg");background-image:linear-gradient(to left, rgba(16,29,44,0.7), rgba(16,29,44,0.7)),url("../img/Canva - Empty Concrete Building.jpg");width:calc((100% - 3 * 3rem) / 4);display:inline-block}.overview-box-bottom-1:not(:last-child),.overview-box-bottom-2:not(:last-child),.overview-box-bottom-3:not(:last-child),.overview-box-bottom-4:not(:last-child){margin-right:2.7rem}.overview-title-big{font-size:4rem}.overview-title-small{font-size:3rem}.overview-content{font-size:2rem}.section-brands{height:40vh;background-color:#f9f7f6;padding:4rem 6rem;position:relative}.brands{height:60%;width:90%;background-color:#fff;border-radius:5px;border:1px solid #aaa;position:absolute;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);top:60%;left:50%}.brands-box{width:calc((100% - 3 * 3rem) / 4);display:inline-block}.brands-box:not(:last-child){margin-right:2.7rem}.brands-box-1{position:absolute;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);top:50%;left:12.5%}.brands-box-2{position:absolute;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);top:50%;left:37.5%}.brands-box-3{position:absolute;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);top:50%;left:62.5%}.brands-box-4{position:absolute;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);top:50%;left:87.5%}.brands-img{position:absolute;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);top:50%;left:50%}.brands-title{position:absolute;top:2rem;left:6rem}.prev,.next{display:inline-block;cursor:pointer;position:absolute;top:50%;width:auto;margin-top:-22px;padding:16px;color:#aaa;font-weight:bold;font-size:3rem;-webkit-transition:0.6s ease;transition:0.6s ease;border-radius:0 3px 3px 0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.next{right:2.5rem;border-radius:3px 0 0 3px}.prev{left:2.5rem;border-radius:3px 0 0 3px}.prev:hover,.next:hover{background-color:rgba(0,0,0,0.8)}.footer{width:100%;padding:2rem;height:40vh;background-color:#101d2c;color:#aaa;font-size:1.6rem;line-height:1.5;overflow:hidden;-webkit-box-shadow:0 -5px 5px rgba(0,0,0,0.5);box-shadow:0 -5px 5px rgba(0,0,0,0.5);margin-top:1rem}.footer-box1,.footer-box2{width:calc((100% - 2rem) / 2);display:inline-block;height:80%;float:left;padding:1rem 4rem}.footer-box3{color:#aaa;text-align:center}.footer-title{font-size:1.8rem;font-weight:700;text-transform:uppercase;margin-top:1.8rem;margin-bottom:1.5rem}.section-product{display:grid;justify-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.box-parent{display:grid;height:25rem;grid-template-rows:80% 20%;grid-template-columns:1fr}.box-img img{margin:auto}.box-title{font-size:2.5rem;font-weight:700;color:#000;text-align:center}.section-product-category{width:100%;margin-top:4rem;margin-bottom:4rem}.product-content{font-size:2rem}.product-category-top{width:70%;margin:auto;text-align:center;border-bottom:0.2rem solid #aaa;padding:2rem}.product-category-bottom{display:grid;justify-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.section-product-item{width:80%;margin:auto}.product-item-box{width:80%;margin:5rem 8rem;padding:2rem;text-align:center}.product-item-header{height:10rem}.product-item-img{width:calc((100% - 2rem) / 2);display:inline-block;float:left}.product-item-content{color:#000;width:calc((100% - 2rem) / 2);display:inline-block;float:left;text-align:left}.product-item-content li{font-size:1.8rem;line-height:1.5}.product-item-content a{font-size:1.8rem;color:#aaa;line-height:3;padding:.5rem}.product-item-content a:hover{text-decoration:underline;color:#000}.section-contact{color:#535353}.contact-form{padding:2rem 4rem;width:100%;font-size:1.5rem}.contact-form-title{width:50%;margin:3rem auto;color:#101d2c}.contact-form-content{width:50%;margin:auto}.contact-form-name,.contact-form-company,.contact-form-email,.contact-form-number{font-size:inherit;width:70%;line-height:2}.contact-form-msg{font-size:inherit;width:70%;line-height:2;height:16rem}.contact-form button{display:block;margin:auto;font-size:inherit;line-height:3rem;width:6rem;color:#f9f7f6;background-color:#101d2c;border:0.2rem solid #101d2c;border-radius:.4rem;-webkit-transition:.2s;transition:.2s;-webkit-box-shadow:0 0.2rem 0.2rem rgba(0,0,0,0.4);box-shadow:0 0.2rem 0.2rem rgba(0,0,0,0.4)}.contact-form button:hover{text-decoration:underline;cursor:pointer;-webkit-transform:translateY(0.1rem) scale(0.95);transform:translateY(0.1rem) scale(0.95);-webkit-box-shadow:none;box-shadow:none}.contact-locations{padding:2rem 4rem;width:100%}.contact-locations-content{font-size:1.8rem}.contact-locations-box{width:50%;margin:auto}.contact-locations-title{color:#101d2c}.contact-locations-sub-content{font-size:1.5rem}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  box-sizing: border-box; }
+
+.margin-bottom-medium {
+  margin-bottom: 3rem; }
+
+.margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.margin-bottom-xs {
+  margin-bottom: 1rem; }
+
+a {
+  text-decoration: none;
+  color: #aaa; }
+
+.btn-learnMore {
+  line-height: 1.5;
+  background: none;
+  padding: .5rem 1rem;
+  color: inherit;
+  border: 0.2rem solid #aaa;
+  border-radius: 3px;
+  text-decoration: underline;
+  margin: 2rem 0; }
+  .btn-learnMore:hover {
+    background-color: #535353;
+    cursor: pointer; }
+
+.title-big {
+  font-size: 5rem;
+  font-weight: 700; }
+
+.title-medium {
+  font-size: 4rem;
+  font-weight: 700; }
+
+.title-small {
+  font-size: 3rem;
+  font-weight: 700; }
+
+.title-xs {
+  font-size: 2rem;
+  font-weight: 700; }
+
+.text-center {
+  text-align: center; }
+
+.row {
+  max-width: 100%;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 0rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 0rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 0rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 2rem) / 2);
+    display: inline-block; }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 2rem) / 4);
+    display: inline-block; }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 2rem) / 4) + 2rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
+
+.grid-row-3 {
+  width: 80%;
+  margin: 3rem 5rem;
+  text-align: center; }
+  .grid-row-3 .grid-col-1-3 {
+    width: 80%;
+    width: calc((100% - 2 * 2rem) / 3);
+    display: inline-block; }
+
+.section-header {
+  height: 100vh;
+  background-image: linear-gradient(to left, rgba(16, 29, 44, 0.8), rgba(16, 29, 44, 0.9)), url("../img/Driving-a-Mercedes.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
+
+.header {
+  height: 100%;
+  color: #aaa;
+  padding: 2rem 4rem;
+  line-height: 1.5; }
+  .header-logo {
+    background-image: radial-gradient(circle, rgba(170, 170, 170, 0.5) 0%, rgba(170, 170, 170, 0.3) 20%, rgba(170, 170, 170, 0.1) 40%, rgba(170, 170, 170, 0) 60%);
+    width: 20rem;
+    height: 15rem;
+    position: relative; }
+    .header-logo img {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      width: 20rem; }
+  .header-nav {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 3rem;
+    right: 4rem; }
+    .header-nav-item {
+      text-decoration: none;
+      color: #aaa; }
+      .header-nav-item:hover {
+        color: #fff; }
+      .header-nav-item:not(:last-child) {
+        margin-right: 1.8rem; }
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .header-content-title {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 4rem;
+      border-bottom: 0.4rem solid #aaa;
+      animation: moveInLeft .5s ease-in; }
+    .header-content-text {
+      font-size: 2.5rem;
+      animation: moveInRight .5s ease-in; }
+  .header-scroll {
+    font-size: 10rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    background: none;
+    border: none;
+    color: inherit; }
+    .header-scroll:hover {
+      cursor: pointer; }
+    .header-scroll:focus {
+      outline: none; }
+
+#header-nav2 {
+  display: none; }
+
+.sticky {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  padding: .7rem;
+  background-color: rgba(16, 29, 44, 0.8);
+  z-index: 2;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.section-overview {
+  color: #aaa; }
+
+.overview-top {
+  height: 49vh;
+  background-color: #f9f7f6;
+  padding: 4rem 6rem; }
+  .overview-top-title {
+    color: #000; }
+
+.overview-bottom {
+  height: 49vh;
+  background-color: #fff;
+  padding: 3rem 6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  .overview-bottom-title {
+    color: #000; }
+
+.overview-box {
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  padding: 2rem 2.5rem;
+  overflow: hidden; }
+  .overview-box-top-1 {
+    background-image: url("../img/Canva - null.jpg");
+    opacity: .8;
+    color: #fff;
+    width: calc((100% - 3rem) / 2);
+    float: left;
+    display: inline-block;
+    margin-right: 2.7rem; }
+  .overview-box-top-2 {
+    background-image: url("../img/header-interruttori.jpg");
+    opacity: .7;
+    color: #fff;
+    width: calc((100% - 3rem) / 2);
+    float: left;
+    display: inline-block; }
+  .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
+    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url("../img/Canva - Empty Concrete Building.jpg");
+    width: calc((100% - 3 * 3rem) / 4);
+    display: inline-block; }
+    .overview-box-bottom-1:not(:last-child), .overview-box-bottom-2:not(:last-child), .overview-box-bottom-3:not(:last-child), .overview-box-bottom-4:not(:last-child) {
+      margin-right: 2.7rem; }
+
+.overview-title-big {
+  font-size: 4rem; }
+
+.overview-title-small {
+  font-size: 3rem; }
+
+.overview-content {
+  font-size: 2rem; }
+
+.section-brands {
+  height: 40vh;
+  background-color: #f9f7f6;
+  padding: 4rem 6rem;
+  position: relative; }
+
+.brands {
+  height: 60%;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%; }
+  .brands-box {
+    width: calc((100% - 3 * 3rem) / 4);
+    display: inline-block; }
+    .brands-box:not(:last-child) {
+      margin-right: 2.7rem; }
+    .brands-box-1 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 12.5%; }
+    .brands-box-2 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 37.5%; }
+    .brands-box-3 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 62.5%; }
+    .brands-box-4 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 87.5%; }
+  .brands-img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; }
+  .brands-title {
+    position: absolute;
+    top: 2rem;
+    left: 6rem; }
+
+/* Next & previous buttons */
+.prev, .next {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #aaa;
+  font-weight: bold;
+  font-size: 3rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 2.5rem;
+  border-radius: 3px 0 0 3px; }
+
+.prev {
+  left: 2.5rem;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.footer {
+  width: 100%;
+  padding: 2rem;
+  height: 40vh;
+  background-color: #101d2c;
+  color: #aaa;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  overflow: hidden;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 1rem; }
+  .footer-box1, .footer-box2, .footer-box3 {
+    width: calc((100% - 2rem) / 3);
+    height: 80%;
+    float: left;
+    padding: 1rem 4rem;
+    position: relative; }
+  .footer-box4 {
+    color: #aaa;
+    width: 100%;
+    text-align: center; }
+  .footer-center-box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; }
+  .footer-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.8rem;
+    margin-bottom: 1.5rem; }
+  .footer-logo {
+    padding: 2rem 4rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; }
+    .footer-logo img {
+      height: 10rem; }
+  .footer-media-logo {
+    font-size: 1.6rem;
+    letter-spacing: 1rem; }
+    .footer-media-logo a:hover {
+      font-size: 2rem;
+      color: #fff; }
+
+.section-product {
+  display: grid;
+  justify-items: center;
+  align-items: center; }
+
+.box-parent {
+  display: grid;
+  height: 25rem;
+  grid-template-rows: 80% 20%;
+  grid-template-columns: 1fr; }
+
+.box-img img {
+  margin: auto; }
+
+.box-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center; }
+
+.section-product-category {
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+
+.product-content {
+  font-size: 2rem; }
+
+.product-category-top {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  border-bottom: 0.2rem solid #aaa;
+  padding: 2rem; }
+
+.product-category-bottom {
+  display: grid;
+  justify-items: center;
+  align-items: center; }
+
+.section-product-item {
+  width: 80%;
+  margin: auto; }
+
+.product-item-box {
+  width: 80%;
+  margin: 5rem 8rem;
+  padding: 2rem;
+  text-align: center; }
+
+.product-item-header {
+  height: 10rem; }
+
+.product-item-img {
+  width: calc((100% - 2rem) / 2);
+  display: inline-block;
+  float: left; }
+
+.product-item-content {
+  color: #000;
+  width: calc((100% - 2rem) / 2);
+  display: inline-block;
+  float: left;
+  text-align: left; }
+  .product-item-content li {
+    font-size: 1.8rem;
+    line-height: 1.5; }
+  .product-item-content a {
+    font-size: 1.8rem;
+    color: #aaa;
+    line-height: 3;
+    padding: .5rem; }
+    .product-item-content a:hover {
+      text-decoration: underline;
+      color: #000; }
+
+.section-contact {
+  color: #535353; }
+
+.contact-form {
+  padding: 2rem 4rem;
+  width: 100%;
+  font-size: 1.5rem; }
+  .contact-form-title {
+    width: 50%;
+    margin: 3rem auto;
+    color: #101d2c; }
+  .contact-form-content {
+    width: 50%;
+    margin: auto; }
+  .contact-form-name, .contact-form-company, .contact-form-email, .contact-form-number {
+    font-size: inherit;
+    width: 70%;
+    line-height: 2; }
+  .contact-form-msg {
+    font-size: inherit;
+    width: 70%;
+    line-height: 2;
+    height: 16rem; }
+  .contact-form button {
+    display: block;
+    margin: auto;
+    font-size: inherit;
+    line-height: 3rem;
+    width: 6rem;
+    color: #f9f7f6;
+    background-color: #101d2c;
+    border: 0.2rem solid #101d2c;
+    border-radius: .4rem;
+    transition: .2s;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.4); }
+    .contact-form button:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      transform: translateY(0.1rem) scale(0.95);
+      box-shadow: none; }
+
+.contact-locations {
+  padding: 2rem 4rem;
+  width: 100%; }
+  .contact-locations-content {
+    font-size: 1.8rem; }
+  .contact-locations-box {
+    width: 50%;
+    margin: auto; }
+  .contact-locations-title {
+    color: #101d2c; }
+  .contact-locations-sub-content {
+    font-size: 1.5rem; }
