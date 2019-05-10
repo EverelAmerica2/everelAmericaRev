@@ -245,7 +245,8 @@ a {
     width: calc((100% - 3rem) / 2);
     float: left;
     display: inline-block;
-    margin-right: 2.7rem; }
+    margin-right: 2.7rem;
+    filter: FlipH; }
   .overview-box-top-2 {
     background-image: url("../img/header-interruttori.jpg");
     opacity: .7;
@@ -254,7 +255,7 @@ a {
     float: left;
     display: inline-block; }
   .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
-    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url("../img/Canva - Empty Concrete Building.jpg");
+    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.8), rgba(16, 29, 44, 0.8)), url("../img/Canva - Empty Concrete Building.jpg");
     width: calc((100% - 3 * 3rem) / 4);
     display: inline-block; }
     .overview-box-bottom-1:not(:last-child), .overview-box-bottom-2:not(:last-child), .overview-box-bottom-3:not(:last-child), .overview-box-bottom-4:not(:last-child) {
@@ -442,12 +443,12 @@ a {
 
 .product-item-box {
   width: 80%;
-  margin: 5rem 8rem;
+  margin: 6rem 8rem;
   padding: 2rem;
   text-align: center; }
 
 .product-item-header {
-  height: 10rem; }
+  height: 17rem; }
 
 .product-item-img {
   width: calc((100% - 2rem) / 2);
@@ -459,7 +460,8 @@ a {
   width: calc((100% - 2rem) / 2);
   display: inline-block;
   float: left;
-  text-align: left; }
+  text-align: left;
+  padding-bottom: 4rem; }
   .product-item-content li {
     font-size: 1.8rem;
     line-height: 1.5; }
