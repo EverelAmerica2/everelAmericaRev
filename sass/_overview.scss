@@ -9,6 +9,39 @@
 }
 
 .overview{
+
+    // &-box-grid{
+    //     display: grid;
+    //     grid-template-rows: 1fr;
+    //     grid-template-columns: repeat(4,1fr);
+    //     padding: 2rem 6rem;
+    //     width:90vw;
+    //     height:45vh;
+    //     padding-top:5rem;
+    // }
+    // &-img{
+    //     display: grid;
+    //     grid-row: span 1;
+    //     grid-column: span 2;
+    //     height:30vh;
+    //     width:100%;
+    //     &-1,&-2{
+    //         object-fit: cover;
+    //         height:100%;
+    //         width: 100%;
+    //     }
+    // }
+    // &-content{
+    //     display: grid;
+    //     grid-row: span 1;
+    //     grid-column: span 2;
+
+    //     p{
+    //         padding:2rem 6rem;
+    //         text-align: center;
+    //     }
+    // }
+
     &-top{
         // display: grid;
         // grid-template-columns: 1fr 1fr;
@@ -34,12 +67,16 @@
         // grid-template-rows: 6rem 1fr;
         //grid-gap: 2rem;
         height: 49vh;
+        //height:45vh;
         //max-height:60vh; 
         background-color: $color-white;
         padding:3rem 6rem;
         margin-top:1rem;
         margin-bottom: 1rem;
         //box-shadow: 0 5px 5px rgba($color-black,.5);
+        //background-color: $color-grey-light-2;
+        //border-top: 2px solid $color-grey-light-2;
+        //border-bottom: 2px solid $color-grey-light-2;
 
         &-title{
             // display: grid;
@@ -55,6 +92,7 @@
         //max-height: 60vh;
         background-size: cover;
         height: 80%;
+        //height:100%;
         width: 100%;
         object-fit: cover;
         padding: 2rem 2.5rem;
@@ -75,6 +113,7 @@
                 float:left;
                 display: inline-block;
                 margin-right:2.7rem;
+                filter:FlipH;
             }
             &-2{
                 background-image:url('../img/header-interruttori.jpg');
@@ -95,7 +134,7 @@
                 // display: grid;
                 // grid-row: span 1;
                 // grid-column: span 1;
-                background-image:linear-gradient(to left, rgba($color-primary,0.7), rgba($color-primary, 0.7)), url('../img/Canva\ -\ Empty\ Concrete\ Building.jpg');
+                background-image:linear-gradient(to left, rgba($color-primary,0.8), rgba($color-primary, 0.8)), url('../img/Canva\ -\ Empty\ Concrete\ Building.jpg');
                 width: calc((100% - 3 * 3rem) / 4);
                 display: inline-block;
 
