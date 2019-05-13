@@ -85,8 +85,9 @@
     width: 2rem;
     height: 2rem;
     right: -1rem;
-    background-color:  $color-grey-light-3;
-    border: .3rem solid $color-grey-dark-1;
+    //background-color:  $color-grey-light-3;
+    background-image: radial-gradient(circle,$color-grey-light-3, $color-grey-dark-1);
+    //border: .3rem solid $color-grey-dark-1;
     top: 2rem;
     border-radius: 50%;
     z-index: 1;
