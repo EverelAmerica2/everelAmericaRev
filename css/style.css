@@ -60,6 +60,9 @@ a {
 .text-center {
   text-align: center; }
 
+.background-grey {
+  background-color: #f9f7f6; }
+
 .row {
   max-width: 100%;
   margin: 0 auto; }
@@ -635,3 +638,39 @@ a {
   /* Make all right containers behave like the left ones */
   .right, .left {
     left: 0%; } }
+
+.section-distribution .distribution-box-1, .section-distribution .distribution-box-2 {
+  width: 80%;
+  padding: 2rem 4rem;
+  margin: 0 auto;
+  position: relative; }
+
+.section-distribution .distribution-box-3 {
+  height: 40vh;
+  width: 80%;
+  padding: 2rem 4rem;
+  margin: 0 auto;
+  position: relative; }
+
+.section-distribution .distribution-title {
+  color: #101d2c; }
+
+.section-distribution .distribution-details {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem 0; }
+  .section-distribution .distribution-details-item {
+    padding: 3.5rem 0; }
+    .section-distribution .distribution-details-item:not(:last-child) {
+      border-bottom: 0.2rem solid #dfdede; }
+    .section-distribution .distribution-details-item img {
+      width: 20rem;
+      object-fit: contain; }
+    .section-distribution .distribution-details-item-content {
+      display: inline-block;
+      padding: 0 4rem;
+      font-size: 1.8rem; }
+    .section-distribution .distribution-details-item a {
+      color: inherit; }
+      .section-distribution .distribution-details-item a:hover {
+        text-decoration: underline; }
