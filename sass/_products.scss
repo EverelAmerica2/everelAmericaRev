@@ -2,20 +2,24 @@
     display: grid;
     justify-items: center;
     align-items: center;
+    padding: 2rem 0;
 }
 
 .box{
 
     &-parent{
-        display: grid;
+        //display: grid;
         height: 25rem;
-        grid-template-rows: 80% 20%;
-        grid-template-columns: 1fr;
+        // grid-template-rows: 80% 20%;
+        // grid-template-columns: 1fr;
+        display: inline-block;
+        width: calc((100% - 2 * 4rem) / 3);
     }
 
     &-img{
         img{
         margin:auto;
+        height: 20rem;
         }
     }
 
@@ -24,6 +28,14 @@
         font-weight: 700;
         color: $color-black;
         text-align: center;
+    }
+
+    &-content{
+        font-size: 1.8rem;
+        color:$color-grey-dark-1;
+        width:70%;
+        text-align: justify;
+        margin: 0 auto;
     }
 
 }
