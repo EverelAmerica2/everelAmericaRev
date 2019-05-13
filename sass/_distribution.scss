@@ -1,0 +1,58 @@
+.section-distribution{
+    //padding: 2rem 4rem;
+
+    .distribution{
+
+        &-box-1,&-box-2{
+            width: 80%;
+            padding: 2rem 4rem;
+            margin:0 auto;
+            position: relative;
+        }
+
+        &-box-3{
+            height:40vh;
+            width: 80%;
+            padding: 2rem 4rem;
+            margin:0 auto;
+            position: relative;
+        }
+        &-title{
+            color:$color-primary
+        }
+
+        &-details{
+            width:70%;
+            margin:0 auto;
+            padding:2rem 0;
+
+
+            &-item{
+                padding: 3.5rem 0;
+                &:not(:last-child){
+                    border-bottom: .2rem solid $color-grey-light-3
+                }
+
+                img{
+                    width:20rem;
+                    object-fit: contain;    
+                }
+
+                &-content{
+                    display: inline-block;
+                    padding:0 4rem;
+                    font-size: 1.8rem;
+                }
+                
+                a{
+                    color:inherit;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+}
