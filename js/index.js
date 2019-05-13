@@ -1,16 +1,14 @@
 
 function navSticky(x) {
-    let navbar2 = document.getElementById("header-nav2");
     let navbar1 = document.getElementById('header-nav1');
-    let sticky = navbar1.offsetTop;
+
 
     if (x.matches) {
-        if (window.pageYOffset >= sticky) {
-            navbar2.classList.add("sticky");
-            navbar2.style.display = 'inline-block';
+        if (window.pageYOffset >= 100) {
+            navbar1.classList.add("sticky");
+            navbar1.style.display = 'inline-block';
         } else {
-            navbar2.classList.remove("sticky");
-            navbar2.style.display = 'none';
+            navbar1.classList.remove("sticky");
         }
     }
 }
