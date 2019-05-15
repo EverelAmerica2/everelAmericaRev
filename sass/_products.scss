@@ -9,21 +9,41 @@
 
     &-parent{
         //display: grid;
-        height: 25rem;
+        min-height: 25rem;
         // grid-template-rows: 80% 20%;
         // grid-template-columns: 1fr;
         display: inline-block;
-        width: calc((100% - 2 * 4rem) / 3);
+        width: calc((100% - 2 * 10rem) / 3);
+        border: 3px solid $color-white;
+        border-radius: 1rem;
+        position: relative;
+        
+        &:not(:last-child){
+            margin-right: 9rem;
+        }
+
+        &:hover{
+            
+            border: 3px solid $color-grey-light-2;
+            border-radius: 1rem;
+            
+            .box-title{
+                text-decoration: underline;
+            }
+        }
+        
+
     }
 
     &-img{
+
         img{
-        margin:auto;
         height: 20rem;
         }
     }
 
     &-title{
+
         font-size: 2.5rem;
         font-weight: 700;
         color: $color-black;
@@ -81,6 +101,7 @@
     // grid-template-rows: 1fr;
     width:80%;
     //justify-items: center;
+    min-height:30rem;
     margin:6rem 8rem;
     padding: 2rem;
     text-align: center;
@@ -95,6 +116,11 @@
         width: calc((100% - 2rem) / 2);
         display: inline-block;
         float: left;
+        padding: 2rem 3rem;
+
+        img{
+            height: 25rem;
+        }
     }
 
     &-content{
@@ -106,12 +132,12 @@
         padding-bottom:4rem;
 
         li{
-            font-size: 1.8rem;
+            font-size: 2rem;
             line-height: 1.5;
         }
 
         a{
-            font-size: 1.8rem;
+            font-size: 2rem;
             color:$color-grey-light-2;
             line-height: 3;
             padding:.5rem;

@@ -69,11 +69,13 @@
     }
 
     &-media-logo{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         letter-spacing: 1rem;
 
         a:hover{
-            font-size: 2rem;
+            i{
+                transform: scale(1.2);
+            }
             color: $color-white;
         }
     }

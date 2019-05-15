@@ -8,6 +8,12 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 81.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -62,6 +68,9 @@ a {
 
 .background-grey {
   background-color: #f9f7f6; }
+
+.empty {
+  opacity: 0; }
 
 .row {
   max-width: 100%;
@@ -397,11 +406,12 @@ a {
     .footer-logo img {
       height: 10rem; }
   .footer-media-logo {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     letter-spacing: 1rem; }
     .footer-media-logo a:hover {
-      font-size: 2rem;
       color: #fff; }
+      .footer-media-logo a:hover i {
+        transform: scale(1.2); }
 
 .section-product {
   display: grid;
@@ -410,12 +420,21 @@ a {
   padding: 2rem 0; }
 
 .box-parent {
-  height: 25rem;
+  min-height: 25rem;
   display: inline-block;
-  width: calc((100% - 2 * 4rem) / 3); }
+  width: calc((100% - 2 * 10rem) / 3);
+  border: 3px solid #fff;
+  border-radius: 1rem;
+  position: relative; }
+  .box-parent:not(:last-child) {
+    margin-right: 9rem; }
+  .box-parent:hover {
+    border: 3px solid #aaa;
+    border-radius: 1rem; }
+    .box-parent:hover .box-title {
+      text-decoration: underline; }
 
 .box-img img {
-  margin: auto;
   height: 20rem; }
 
 .box-title {
@@ -457,6 +476,7 @@ a {
 
 .product-item-box {
   width: 80%;
+  min-height: 30rem;
   margin: 6rem 8rem;
   padding: 2rem;
   text-align: center; }
@@ -467,7 +487,10 @@ a {
 .product-item-img {
   width: calc((100% - 2rem) / 2);
   display: inline-block;
-  float: left; }
+  float: left;
+  padding: 2rem 3rem; }
+  .product-item-img img {
+    height: 25rem; }
 
 .product-item-content {
   color: #000;
@@ -477,10 +500,10 @@ a {
   text-align: left;
   padding-bottom: 4rem; }
   .product-item-content li {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.5; }
   .product-item-content a {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #aaa;
     line-height: 3;
     padding: .5rem; }
