@@ -1,10 +1,40 @@
 .section-distribution{
     //padding: 2rem 4rem;
 
+    .dis-box-parent{
+        min-height: 15rem;
+        padding: .5rem 1rem;
+        display: inline-block;
+        width: calc((100% - 2 * 10rem) / 3);
+        border: 3px solid $color-white;
+        border-radius: 1rem;
+        position: relative;
+        
+        &:not(:last-child){
+            margin-right: 9rem;
+        }
+
+        &:hover{
+            
+            border: 3px solid $color-grey-light-2;
+            border-radius: 1rem;
+            
+            .dis-box-title{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .dis-box-img{
+        img{
+            height: 10rem;
+        }
+    }
+
     .distribution{
 
         &-box-1,&-box-2{
-            width: 80%;
+            width: 100%;
             padding: 2rem 4rem;
             margin:0 auto;
             position: relative;
