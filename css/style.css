@@ -112,8 +112,8 @@ a {
 
 .grid-row-3 {
   width: 80%;
-  margin: 3rem 5rem;
-  text-align: center; }
+  text-align: center;
+  margin: 3rem auto; }
   .grid-row-3 .grid-col-1-3 {
     width: 80%;
     width: calc((100% - 2 * 2rem) / 3);
@@ -254,7 +254,7 @@ a {
   padding: 2rem 2.5rem;
   overflow: hidden; }
   .overview-box-top-1 {
-    background-image: url("../img/Canva - null.jpg");
+    background-image: linear-gradient(to right, rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.1)), url("../img/Canva - null.jpg");
     opacity: .8;
     color: #fff;
     width: calc((100% - 3rem) / 2);
@@ -525,6 +525,12 @@ a {
   .contact-form-content {
     width: 50%;
     margin: auto; }
+  .contact-form-text {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: justify; }
   .contact-form-name, .contact-form-company, .contact-form-email, .contact-form-number {
     font-size: inherit;
     width: 70%;
@@ -669,8 +675,27 @@ a {
   .right, .left {
     left: 0%; } }
 
+.section-distribution .dis-box-parent {
+  min-height: 15rem;
+  padding: .5rem 1rem;
+  display: inline-block;
+  width: calc((100% - 2 * 10rem) / 3);
+  border: 3px solid #fff;
+  border-radius: 1rem;
+  position: relative; }
+  .section-distribution .dis-box-parent:not(:last-child) {
+    margin-right: 9rem; }
+  .section-distribution .dis-box-parent:hover {
+    border: 3px solid #aaa;
+    border-radius: 1rem; }
+    .section-distribution .dis-box-parent:hover .dis-box-title {
+      text-decoration: underline; }
+
+.section-distribution .dis-box-img img {
+  height: 10rem; }
+
 .section-distribution .distribution-box-1, .section-distribution .distribution-box-2 {
-  width: 80%;
+  width: 100%;
   padding: 2rem 4rem;
   margin: 0 auto;
   position: relative; }

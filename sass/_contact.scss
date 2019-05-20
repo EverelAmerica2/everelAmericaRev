@@ -18,6 +18,14 @@
         margin: auto;
     }
 
+    &-text{
+        width: 50%;
+        margin:0 auto;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+    }
+
     &-name, &-company,&-email, &-number{
         font-size: inherit;
         width: 70%;
