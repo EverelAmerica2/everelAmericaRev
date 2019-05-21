@@ -691,6 +691,11 @@ a {
     .section-distribution .dis-box-parent:hover .dis-box-title {
       text-decoration: underline; }
 
+.section-distribution .dis-grid-row-3 {
+  width: 100%;
+  text-align: center;
+  margin: 3rem auto; }
+
 .section-distribution .dis-box-img img {
   height: 10rem; }
 
