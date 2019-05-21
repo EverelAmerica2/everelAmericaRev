@@ -116,7 +116,31 @@
                 filter:FlipH;
             }
             &-2{
-                background-image:url('../img/header-interruttori.jpg');
+                background-image:linear-gradient(to left, rgba($color-primary,0.6), rgba($color-primary, 0.2)),url('../img/Canva\ -\ hourglass.jpg');
+                opacity: .7;
+                color:$color-white;
+                // display: grid;
+                // grid-row: span 1;
+                // grid-column: span 1;
+                //box-shadow: 5px 5px 5px rgba($color-black,.5);
+                width: calc((100% - 3rem) / 2);
+                float:left;
+                display: inline-block;
+            }
+            &-3{
+                background-image:linear-gradient(to right, rgba($color-primary,0.6), rgba($color-primary, 0.2)),url('../img/Canva\ -\ books.jpg');
+                opacity: .7;
+                color:$color-white;
+                // display: grid;
+                // grid-row: span 1;
+                // grid-column: span 1;
+                //box-shadow: 5px 5px 5px rgba($color-black,.5);
+                width: calc((100% - 3rem) / 2);
+                float:left;
+                display: inline-block;
+            }
+            &-4{
+                background-image:linear-gradient(to right, rgba($color-primary,0.6), rgba($color-primary, 0.2)),url('../img/Canva\ -\ Grayscale\ Photography\ of\ Boats\ Near\ Buildings.jpg');
                 opacity: .7;
                 color:$color-white;
                 // display: grid;
