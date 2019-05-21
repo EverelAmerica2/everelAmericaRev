@@ -263,7 +263,21 @@ a {
     margin-right: 2.7rem;
     filter: FlipH; }
   .overview-box-top-2 {
-    background-image: url("../img/header-interruttori.jpg");
+    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.6), rgba(16, 29, 44, 0.2)), url("../img/Canva - hourglass.jpg");
+    opacity: .7;
+    color: #fff;
+    width: calc((100% - 3rem) / 2);
+    float: left;
+    display: inline-block; }
+  .overview-box-top-3 {
+    background-image: linear-gradient(to right, rgba(16, 29, 44, 0.6), rgba(16, 29, 44, 0.2)), url("../img/Canva - books.jpg");
+    opacity: .7;
+    color: #fff;
+    width: calc((100% - 3rem) / 2);
+    float: left;
+    display: inline-block; }
+  .overview-box-top-4 {
+    background-image: linear-gradient(to right, rgba(16, 29, 44, 0.6), rgba(16, 29, 44, 0.2)), url("../img/Canva - Grayscale Photography of Boats Near Buildings.jpg");
     opacity: .7;
     color: #fff;
     width: calc((100% - 3rem) / 2);
