@@ -434,7 +434,9 @@ a {
       text-decoration: underline; }
 
 .box-img img {
-  height: 20rem; }
+  height: 20rem;
+  width: 20rem;
+  object-fit: contain; }
 
 .box-title {
   font-size: 2.5rem;
@@ -489,7 +491,7 @@ a {
   float: left;
   padding: 2rem 3rem; }
   .product-item-img img {
-    height: 25rem; }
+    max-height: 25rem; }
 
 .product-item-content {
   color: #000;
