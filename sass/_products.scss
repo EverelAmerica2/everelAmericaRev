@@ -138,6 +138,17 @@
         li{
             font-size: 2rem;
             line-height: 1.5;
+
+            a{
+                font-size: inherit;
+                line-height: inherit;
+                color:$color-grey-light-2;
+
+                &:hover{
+                    text-decoration: underline;
+                    color:$color-black;
+                }
+            }
         }
 
         a{

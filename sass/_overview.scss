@@ -99,12 +99,13 @@
         overflow: hidden;
         //border-radius: 5px;
         //box-shadow: 5px 5px 5px rgba($color-black,.5);
+        transition: all .2s ease;
 
         &-top{
             &-1{
                 background-image:linear-gradient(to right, rgba($color-primary,0.5),rgba($color-primary,0.1)),url('../img/Canva\ -\ null.jpg');
                 opacity: .8;
-                color: $color-white;
+                //color: $color-white;
                 // display: grid;
                 // grid-row: span 1;
                 // grid-column: span 1;
@@ -114,11 +115,15 @@
                 display: inline-block;
                 margin-right:2.7rem;
                 // filter:FlipH;
+
+                &:hover{
+                    color: $color-white;
+                }
             }
             &-2{
                 background-image:linear-gradient(to left, rgba($color-primary,0.6), rgba($color-primary, 0.2)),url('../img/Canva\ -\ hourglass.jpg');
                 opacity: .7;
-                color:$color-white;
+                //color:$color-white;
                 // display: grid;
                 // grid-row: span 1;
                 // grid-column: span 1;
@@ -126,6 +131,10 @@
                 width: calc((100% - 3rem) / 2);
                 float:left;
                 display: inline-block;
+
+                &:hover{
+                    color: $color-white;
+                }
             }
             
         }
@@ -135,7 +144,8 @@
                 // display: grid;
                 // grid-row: span 1;
                 // grid-column: span 1;
-                background-image:linear-gradient(to left, rgba($color-primary,0.8), rgba($color-primary, 0.8)), url('../img/Canva\ -\ Empty\ Concrete\ Building.jpg');
+                //background-image:linear-gradient(to left, rgba($color-primary,0.8), rgba($color-primary, 0.8)), url('../img/Canva\ -\ Empty\ Concrete\ Building.jpg');
+                background-image: radial-gradient(circle,rgba($color-primary, .6) 0%, rgba($color-primary, .8) 50%, rgba($color-primary, 1) 100%);
                 width: calc((100% - 3 * 3rem) / 4);
                 display: inline-block;
 
@@ -143,6 +153,9 @@
                     margin-right: 2.7rem;
                 }
                 
+                &:hover{
+                    color: $color-white;
+                }
             }
         }
     }
