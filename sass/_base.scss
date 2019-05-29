@@ -69,6 +69,10 @@ body {
 a{
     text-decoration: none;
     color:$color-grey-light-2;
+
+    &:hover{
+        color:$color-white;
+    }
 }
 
 .btn-learnMore{
@@ -82,7 +86,7 @@ a{
     margin:2rem 0;
     
     &:hover{
-        background-color: $color-grey-dark-1;
+        background-color: $color-primary;
         cursor:pointer;
     }
 

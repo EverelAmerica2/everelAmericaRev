@@ -33,6 +33,8 @@ body {
 a {
   text-decoration: none;
   color: #aaa; }
+  a:hover {
+    color: #fff; }
 
 .btn-learnMore {
   line-height: 1.5;
@@ -44,7 +46,7 @@ a {
   text-decoration: underline;
   margin: 2rem 0; }
   .btn-learnMore:hover {
-    background-color: #535353;
+    background-color: #101d2c;
     cursor: pointer; }
 
 .title-big {
@@ -252,28 +254,33 @@ a {
   width: 100%;
   object-fit: cover;
   padding: 2rem 2.5rem;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all .2s ease; }
   .overview-box-top-1 {
     background-image: linear-gradient(to right, rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.1)), url("../img/Canva - null.jpg");
     opacity: .8;
-    color: #fff;
     width: calc((100% - 3rem) / 2);
     float: left;
     display: inline-block;
     margin-right: 2.7rem; }
+    .overview-box-top-1:hover {
+      color: #fff; }
   .overview-box-top-2 {
     background-image: linear-gradient(to left, rgba(16, 29, 44, 0.6), rgba(16, 29, 44, 0.2)), url("../img/Canva - hourglass.jpg");
     opacity: .7;
-    color: #fff;
     width: calc((100% - 3rem) / 2);
     float: left;
     display: inline-block; }
+    .overview-box-top-2:hover {
+      color: #fff; }
   .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
-    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.8), rgba(16, 29, 44, 0.8)), url("../img/Canva - Empty Concrete Building.jpg");
+    background-image: radial-gradient(circle, rgba(16, 29, 44, 0.6) 0%, rgba(16, 29, 44, 0.8) 50%, #101d2c 100%);
     width: calc((100% - 3 * 3rem) / 4);
     display: inline-block; }
     .overview-box-bottom-1:not(:last-child), .overview-box-bottom-2:not(:last-child), .overview-box-bottom-3:not(:last-child), .overview-box-bottom-4:not(:last-child) {
       margin-right: 2.7rem; }
+    .overview-box-bottom-1:hover, .overview-box-bottom-2:hover, .overview-box-bottom-3:hover, .overview-box-bottom-4:hover {
+      color: #fff; }
 
 .overview-title-big {
   font-size: 4rem; }
@@ -504,6 +511,13 @@ a {
   .product-item-content li {
     font-size: 2rem;
     line-height: 1.5; }
+    .product-item-content li a {
+      font-size: inherit;
+      line-height: inherit;
+      color: #aaa; }
+      .product-item-content li a:hover {
+        text-decoration: underline;
+        color: #000; }
   .product-item-content a {
     font-size: 2rem;
     color: #aaa;
@@ -552,7 +566,7 @@ a {
     background-color: #101d2c;
     border: 0.2rem solid #101d2c;
     border-radius: .4rem;
-    transition: .2s;
+    transition: .1s;
     box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.4); }
     .contact-form button:hover {
       text-decoration: underline;
