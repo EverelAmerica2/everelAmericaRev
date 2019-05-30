@@ -88,5 +88,11 @@
         display: inline-block;
     }
 
+    .grid-col-2-3{
+        width: 80%;
+        width: calc((100% - 2 * 2rem) * 2 / 3);
+        display: inline-block;
+    }
+
 
 }
