@@ -1,4 +1,6 @@
-
+/*
+ *sticky feature for nav-bar 
+ */
 function navSticky(x) {
     let navbar1 = document.getElementById('header-nav1');
 
@@ -16,47 +18,79 @@ function navSticky(x) {
 let viewPort = window.matchMedia("(min-width: 56.26em)");
 window.onscroll = function () { navSticky(viewPort) };
 
-
-
+/*
+ * Function for the scroll Arrow in the Header 
+ */
 function scrollArrow(){
     window.scroll(0,500);
 }
 
 
-function showSlides(n, viewPort2) {
+
+/*
+ * Slide show  
+ */
+function showSlides(n, viewPort2, viewPort3) {
     let i;
-    let slides = document.getElementsByClassName("brands-slides");
+    let slides = document.getElementsByClassName("brands-box");
     //let dots = document.getElementsByClassName("dot");
     if (viewPort2.matches) {
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
+        if (n > slides.length-1) { slideIndex = 0 }
+        if (n < 0) { slideIndex = slides.length-1 }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
         // for (i = 0; i < dots.length; i++) {
         //     dots[i].className = dots[i].className.replace(" active", "");
         // }
-        slides[slideIndex - 1].style.display = "grid";
+        slides[slideIndex].style.display = "inline-block";
         //dots[slideIndex-1].className += " active";
+    }else if (viewPort3.matches) {
+        if (n > slides.length-1) { slideIndex = 0 }
+        if (n < 0) { slideIndex = slides.length-1 }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex].style.display = "inline-block";
+        slides[slideIndex+1].style.display = "inline-block";
+        slides[slideIndex+2].style.display = "inline-block";
+    }else{
+        if (n > slides.length-1) { slideIndex = 0 }
+        if (n < 0) { slideIndex = slides.length-1 }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex ].style.display = "inline-block";
+        slides[slideIndex +1].style.display = "inline-block";
+        slides[slideIndex +2].style.display = "inline-block";
+        slides[slideIndex +3].style.display = "inline-block";
+
     }
+
+
 }
 
 
 let viewPort2 = window.matchMedia("(max-width: 600px)");
-let slideIndex = 1;
-showSlides(slideIndex, viewPort2);
+let viewPort3 = window.matchMedia("(max-width: 56.25em)");
+let slideIndex = 0;
+showSlides(slideIndex, viewPort2, viewPort3);
 
 function plusSlides(n) {
     slideIndex = slideIndex + n;
-    showSlides(slideIndex, viewPort2);
+    showSlides(slideIndex, viewPort2, viewPort3);
 }
 
 function currentSlide(n) {
     slideIndex = n;
-    showSlides(slideIndex, viewPort2);
+    showSlides(slideIndex, viewPort2, viewPort3);
 }
 
-
+/*
+ * phone size nav-bar checkbox 
+ */
 function navCheckbox() {
     let naviToggle = document.getElementById('navi-toggle');
     naviToggle.checked = false;

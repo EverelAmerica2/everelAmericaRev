@@ -8,16 +8,14 @@
 .box{
 
     &-parent{
-        //display: grid;
         min-height: 25rem;
         min-width: 25rem;
-        // grid-template-rows: 80% 20%;
-        // grid-template-columns: 1fr;
         display: inline-block;
         width: calc((100% - 2 * 10rem) / 3);
-        border: 3px solid $color-white;
         border-radius: 1rem;
         position: relative;
+        transition: .2s;
+        padding: 3rem;
 
         @include respond(tab-port){
             width: calc((100% - 2 * 8rem) / 3);
@@ -40,10 +38,10 @@
         }
 
         &:hover{
-            
-            border: 3px solid $color-grey-light-2;
             border-radius: 1rem;
-            
+            box-shadow: 0 0 8px rgba($color-black,.8);
+            transform: scale(1.08);
+
             .box-title{
                 text-decoration: underline;
             }

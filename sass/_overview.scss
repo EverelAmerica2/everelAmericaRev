@@ -1,115 +1,50 @@
 .section-overview{
     color:$color-grey-light-2;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 1fr 1fr;
-    // grid-template-rows: 1fr 1fr;
-    // grid-gap: .5rem;
-    //height: 98vh;
-    //background-color: $color-grey-light-1;
+    
 }
 
 .overview{
 
-    // &-box-grid{
-    //     display: grid;
-    //     grid-template-rows: 1fr;
-    //     grid-template-columns: repeat(4,1fr);
-    //     padding: 2rem 6rem;
-    //     width:90vw;
-    //     height:45vh;
-    //     padding-top:5rem;
-    // }
-    // &-img{
-    //     display: grid;
-    //     grid-row: span 1;
-    //     grid-column: span 2;
-    //     height:30vh;
-    //     width:100%;
-    //     &-1,&-2{
-    //         object-fit: cover;
-    //         height:100%;
-    //         width: 100%;
-    //     }
-    // }
-    // &-content{
-    //     display: grid;
-    //     grid-row: span 1;
-    //     grid-column: span 2;
+   
 
-    //     p{
-    //         padding:2rem 6rem;
-    //         text-align: center;
-    //     }
-    // }
-
-    &-top{
-        // display: grid;
-        // grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 5rem 1fr;
-        //grid-gap: 2rem;
+    &-top{      
         height: 49vh;
-        //max-height:60vh;
         background-color: $color-grey-light-1;
         padding:4rem 6rem;
-        //box-shadow: 5px 5px 5px rgba($color-black,.5);
 
         &-title{
-            // display: grid;
-            // grid-row: span 1;
-            // grid-column: span 2;
             color: $color-black;
         }
     }
 
-    &-bottom{
-        // display: grid;
-        // grid-template-columns: repeat(4,1fr);
-        // grid-template-rows: 6rem 1fr;
-        //grid-gap: 2rem;
+    &-bottom{    
         height: 49vh;
-        //height:45vh;
-        //max-height:60vh; 
         background-color: $color-white;
         padding:3rem 6rem;
         margin-top:1rem;
         margin-bottom: 1rem;
-        //box-shadow: 0 5px 5px rgba($color-black,.5);
-        //background-color: $color-grey-light-2;
-        //border-top: 2px solid $color-grey-light-2;
-        //border-bottom: 2px solid $color-grey-light-2;
+
 
         &-title{
-            // display: grid;
-            // grid-row: span 1;
-            // grid-column: span 4;
+
             color:$color-black;
         }
         
     }
 
     &-box{
-        //height:45vh;    //need to adjust
-        //max-height: 60vh;
         background-size: cover;
         height: 80%;
-        //height:100%;
         width: 100%;
         object-fit: cover;
         padding: 2rem 2.5rem;
         overflow: hidden;
-        //border-radius: 5px;
-        //box-shadow: 5px 5px 5px rgba($color-black,.5);
         transition: all .2s ease;
 
         &-top{
             &-1{
-                background-image:linear-gradient(to right, rgba($color-primary,0.5),rgba($color-primary,0.1)),url('../img/Canva\ -\ null.jpg');
+                background-image:linear-gradient(to right, rgba($color-primary,0.5),rgba($color-primary,0.1)),url('../img/Canva-microphone.jpg');
                 opacity: .8;
-                //color: $color-white;
-                // display: grid;
-                // grid-row: span 1;
-                // grid-column: span 1;
-                //box-shadow: 5px 5px 5px rgba($color-black,.5);
                 width: calc((100% - 3rem) / 2);
                 float:left;
                 display: inline-block;
@@ -121,13 +56,8 @@
                 }
             }
             &-2{
-                background-image:linear-gradient(to left, rgba($color-primary,0.6), rgba($color-primary, 0.2)),url('../img/Canva\ -\ hourglass.jpg');
+                background-image:linear-gradient(to left, rgba($color-primary,0.6), rgba($color-primary, 0.2)),url('../img/Canva-hourglass.jpg');
                 opacity: .7;
-                //color:$color-white;
-                // display: grid;
-                // grid-row: span 1;
-                // grid-column: span 1;
-                //box-shadow: 5px 5px 5px rgba($color-black,.5);
                 width: calc((100% - 3rem) / 2);
                 float:left;
                 display: inline-block;
@@ -141,10 +71,6 @@
 
         &-bottom{
             &-1,&-2,&-3,&-4{
-                // display: grid;
-                // grid-row: span 1;
-                // grid-column: span 1;
-                //background-image:linear-gradient(to left, rgba($color-primary,0.8), rgba($color-primary, 0.8)), url('../img/Canva\ -\ Empty\ Concrete\ Building.jpg');
                 background-image: radial-gradient(circle,rgba($color-primary, .6) 0%, rgba($color-primary, .8) 50%, rgba($color-primary, 1) 100%);
                 width: calc((100% - 3 * 3rem) / 4);
                 display: inline-block;
