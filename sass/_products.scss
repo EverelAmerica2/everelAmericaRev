@@ -10,6 +10,7 @@
     &-parent{
         //display: grid;
         min-height: 25rem;
+        min-width: 25rem;
         // grid-template-rows: 80% 20%;
         // grid-template-columns: 1fr;
         display: inline-block;
@@ -17,9 +18,25 @@
         border: 3px solid $color-white;
         border-radius: 1rem;
         position: relative;
+
+        @include respond(tab-port){
+            width: calc((100% - 2 * 8rem) / 3);
+        }
         
+        @include respond(phone){
+            width: 100%;
+        }
+
         &:not(:last-child){
             margin-right: 9rem;
+
+            @include respond(tab-port){
+                margin-right: 7rem;
+            }
+
+            @include respond(phone){
+                margin-right:0;
+            }
         }
 
         &:hover{
@@ -32,7 +49,12 @@
             }
         }
         
-        
+        &-empty{
+            opacity: 0;
+            @include respond(phone){
+                display: none;
+            }
+        }
     }
 
     &-img{
@@ -41,6 +63,10 @@
             height: 20rem;
             width: 20rem;
             object-fit:contain;
+            @include respond(phone){
+                height: 15rem;
+                width: 15rem;
+            }
         }
     }
 
@@ -50,6 +76,8 @@
         font-weight: 700;
         color: $color-black;
         text-align: center;
+
+        
     }
 
     &-content{
@@ -58,6 +86,10 @@
         width:70%;
         text-align: center;
         margin: 0 auto;
+
+        @include respond(tab-port){
+            width:95%;
+        }
     }
 
 }
@@ -81,6 +113,10 @@
             text-align: center;
             border-bottom: .2rem solid $color-grey-light-2;
             padding: 2rem;
+
+            @include respond(phone){
+                width: 95%;
+            }
         }
 
         &-bottom{

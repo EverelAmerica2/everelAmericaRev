@@ -20,12 +20,21 @@ body {
 
 .margin-bottom-large {
   margin-bottom: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .margin-bottom-large {
+      margin-bottom: 3rem; } }
 
 .margin-bottom-medium {
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .margin-bottom-medium {
+      margin-bottom: 2rem; } }
 
 .margin-bottom-small {
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .margin-bottom-small {
+      margin-bottom: 1rem; } }
 
 .margin-bottom-xs {
   margin-bottom: 1rem; }
@@ -52,18 +61,30 @@ a {
 .title-big {
   font-size: 5rem;
   font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .title-big {
+      font-size: 3.5rem; } }
 
 .title-medium {
   font-size: 4rem;
   font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .title-medium {
+      font-size: 2.5rem; } }
 
 .title-small {
   font-size: 3rem;
   font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .title-small {
+      font-size: 2rem; } }
 
 .title-xs {
   font-size: 2rem;
   font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .title-xs {
+      font-size: 1.5rem; } }
 
 .text-center {
   text-align: center; }
@@ -73,6 +94,9 @@ a {
 
 .empty {
   opacity: 0; }
+  @media only screen and (max-width: 37.5em) {
+    .empty {
+      display: none; } }
 
 .float-right {
   float: right; }
@@ -122,6 +146,9 @@ a {
   width: 80%;
   text-align: center;
   margin: 3rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .grid-row-3 {
+      width: 95%; } }
   .grid-row-3 .grid-col-1-3 {
     width: 80%;
     width: calc((100% - 2 * 2rem) / 3);
@@ -563,21 +590,39 @@ a {
   overflow: hidden;
   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
   margin-top: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      height: 50vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      height: 60vh; } }
   .footer-box1, .footer-box2, .footer-box3 {
     width: calc((100% - 2rem) / 3);
     height: 80%;
     float: left;
     padding: 1rem 4rem;
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .footer-box1, .footer-box2, .footer-box3 {
+        width: calc((100% - 1rem) / 3); } }
+  @media only screen and (max-width: 37.5em) {
+    .footer-box1, .footer-box2 {
+      width: calc((100% - 1rem) / 2);
+      padding: 0.5rem 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer-box3 {
+      display: none; } }
   .footer-box4 {
     color: #aaa;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding: 0.5rem; }
   .footer-center-box {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 50%; }
+    left: 50%;
+    width: 70%; }
   .footer-title {
     font-size: 1.8rem;
     font-weight: 700;
@@ -608,23 +653,45 @@ a {
 
 .box-parent {
   min-height: 25rem;
+  min-width: 25rem;
   display: inline-block;
   width: calc((100% - 2 * 10rem) / 3);
   border: 3px solid #fff;
   border-radius: 1rem;
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .box-parent {
+      width: calc((100% - 2 * 8rem) / 3); } }
+  @media only screen and (max-width: 37.5em) {
+    .box-parent {
+      width: 100%; } }
   .box-parent:not(:last-child) {
     margin-right: 9rem; }
+    @media only screen and (max-width: 56.25em) {
+      .box-parent:not(:last-child) {
+        margin-right: 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .box-parent:not(:last-child) {
+        margin-right: 0; } }
   .box-parent:hover {
     border: 3px solid #aaa;
     border-radius: 1rem; }
     .box-parent:hover .box-title {
       text-decoration: underline; }
+  .box-parent-empty {
+    opacity: 0; }
+    @media only screen and (max-width: 37.5em) {
+      .box-parent-empty {
+        display: none; } }
 
 .box-img img {
   height: 20rem;
   width: 20rem;
   object-fit: contain; }
+  @media only screen and (max-width: 37.5em) {
+    .box-img img {
+      height: 15rem;
+      width: 15rem; } }
 
 .box-title {
   font-size: 2.5rem;
@@ -638,6 +705,9 @@ a {
   width: 70%;
   text-align: center;
   margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .box-content {
+      width: 95%; } }
 
 .section-product-category {
   width: 100%;
@@ -653,6 +723,9 @@ a {
   text-align: center;
   border-bottom: 0.2rem solid #aaa;
   padding: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .product-category-top {
+      width: 95%; } }
 
 .product-category-bottom {
   display: grid;
