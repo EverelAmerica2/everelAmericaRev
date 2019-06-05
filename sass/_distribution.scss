@@ -6,17 +6,34 @@
         padding: .5rem 1rem;
         display: inline-block;
         width: calc((100% - 2 * 10rem) / 3);
-        border: 3px solid $color-white;
         border-radius: 1rem;
         position: relative;
+        transition: .2s;
         
+        @include respond(tab-port){
+            width: calc((100% - 2 * 8rem) / 3);
+        }
+        
+        @include respond(phone){
+            width: 100%;
+        }
+
         &:not(:last-child){
             margin-right: 9rem;
+
+            @include respond(tab-port){
+                margin-right: 7rem;
+            }
+
+            @include respond(phone){
+                margin-right:0;
+            }
         }
 
         &:hover{
             
-            border: 3px solid $color-grey-light-2;
+            box-shadow: 0 0 8px rgba($color-black,.8);
+            transform: scale(1.08);
             border-radius: 1rem;
             
             .dis-box-title{

@@ -465,7 +465,7 @@ a {
   overflow: hidden;
   transition: all .2s ease; }
   .overview-box-top-1 {
-    background-image: linear-gradient(to right, rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.1)), url("../img/Canva - null.jpg");
+    background-image: linear-gradient(to right, rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.1)), url("../img/Canva-microphone.jpg");
     opacity: .8;
     width: calc((100% - 3rem) / 2);
     float: left;
@@ -474,7 +474,7 @@ a {
     .overview-box-top-1:hover {
       color: #fff; }
   .overview-box-top-2 {
-    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.6), rgba(16, 29, 44, 0.2)), url("../img/Canva - hourglass.jpg");
+    background-image: linear-gradient(to left, rgba(16, 29, 44, 0.6), rgba(16, 29, 44, 0.2)), url("../img/Canva-hourglass.jpg");
     opacity: .7;
     width: calc((100% - 3rem) / 2);
     float: left;
@@ -519,36 +519,19 @@ a {
     width: calc((100% - 3 * 3rem) / 4);
     display: inline-block; }
     .brands-box:not(:last-child) {
-      margin-right: 2.7rem; }
-    .brands-box-1 {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 12.5%; }
-    .brands-box-2 {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 37.5%; }
-    .brands-box-3 {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 62.5%; }
-    .brands-box-4 {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 87.5%; }
+      margin-right: 2rem; }
   .brands-img {
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%; }
+    transform: translateY(-50%);
+    top: 50%; }
   .brands-title {
     position: absolute;
     top: 2rem;
     left: 6rem; }
+  .brands-center {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto; }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -656,9 +639,10 @@ a {
   min-width: 25rem;
   display: inline-block;
   width: calc((100% - 2 * 10rem) / 3);
-  border: 3px solid #fff;
   border-radius: 1rem;
-  position: relative; }
+  position: relative;
+  transition: .2s;
+  padding: 3rem; }
   @media only screen and (max-width: 56.25em) {
     .box-parent {
       width: calc((100% - 2 * 8rem) / 3); } }
@@ -674,8 +658,9 @@ a {
       .box-parent:not(:last-child) {
         margin-right: 0; } }
   .box-parent:hover {
-    border: 3px solid #aaa;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    transform: scale(1.08); }
     .box-parent:hover .box-title {
       text-decoration: underline; }
   .box-parent-empty {
@@ -947,13 +932,26 @@ a {
   padding: .5rem 1rem;
   display: inline-block;
   width: calc((100% - 2 * 10rem) / 3);
-  border: 3px solid #fff;
   border-radius: 1rem;
-  position: relative; }
+  position: relative;
+  transition: .2s; }
+  @media only screen and (max-width: 56.25em) {
+    .section-distribution .dis-box-parent {
+      width: calc((100% - 2 * 8rem) / 3); } }
+  @media only screen and (max-width: 37.5em) {
+    .section-distribution .dis-box-parent {
+      width: 100%; } }
   .section-distribution .dis-box-parent:not(:last-child) {
     margin-right: 9rem; }
+    @media only screen and (max-width: 56.25em) {
+      .section-distribution .dis-box-parent:not(:last-child) {
+        margin-right: 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .section-distribution .dis-box-parent:not(:last-child) {
+        margin-right: 0; } }
   .section-distribution .dis-box-parent:hover {
-    border: 3px solid #aaa;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    transform: scale(1.08);
     border-radius: 1rem; }
     .section-distribution .dis-box-parent:hover .dis-box-title {
       text-decoration: underline; }
