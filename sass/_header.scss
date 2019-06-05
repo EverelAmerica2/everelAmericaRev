@@ -22,12 +22,22 @@
         height: 15rem;
         //float: left;
         position: relative;
+
+        @include respond(tab-port){
+            width:15rem;
+            height:10rem;
+        }
+
         img{
             position: absolute;
             transform: translate(-50%,-50%);
             top:50%;
             left: 50%;
             width: 20rem;
+
+            @include respond(tab-port){
+                width:15rem;
+            }
         }
     }
 
@@ -48,6 +58,11 @@
             &:not(:last-child){
                 margin-right:1.8rem;
             }
+        }
+
+        @include respond(tab-port){
+            display: none;
+            
         }
     }
 
@@ -101,6 +116,10 @@
             height: 10rem;
             //animation: moveInTopBounce 3s;
             
+        }
+
+        @include respond(tab-port){
+            display: none;
         }
     }
 

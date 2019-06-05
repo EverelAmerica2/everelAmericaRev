@@ -13,18 +13,10 @@ function navSticky(x) {
     }
 }
 
-let viewPort = window.matchMedia("(min-width: 601px)");
+let viewPort = window.matchMedia("(min-width: 56.26em)");
 window.onscroll = function () { navSticky(viewPort) };
 
 
-
-/*
-function navCheckbox() {
-  let naviToggle = document.getElementById('navi-toggle');
-  naviToggle.checked = false;
-}
- 
-*/
 
 function scrollArrow(){
     window.scroll(0,500);
@@ -63,3 +55,10 @@ function currentSlide(n) {
     slideIndex = n;
     showSlides(slideIndex, viewPort2);
 }
+
+
+function navCheckbox() {
+    let naviToggle = document.getElementById('navi-toggle');
+    naviToggle.checked = false;
+  }
+  
