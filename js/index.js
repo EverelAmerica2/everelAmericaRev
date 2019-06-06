@@ -21,8 +21,8 @@ window.onscroll = function () { navSticky(viewPort) };
 /*
  * Function for the scroll Arrow in the Header 
  */
-function scrollArrow(){
-    window.scroll(0,500);
+function scrollArrow() {
+    window.scroll(0, 500);
 }
 
 
@@ -35,8 +35,8 @@ function showSlides(n, viewPort2, viewPort3) {
     let slides = document.getElementsByClassName("brands-box");
     //let dots = document.getElementsByClassName("dot");
     if (viewPort2.matches) {
-        if (n > slides.length-1) { slideIndex = 0 }
-        if (n < 0) { slideIndex = slides.length-1 }
+        if (n > slides.length - 1) { slideIndex = 0 }
+        if (n < 0) { slideIndex = slides.length - 1 }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
@@ -45,27 +45,31 @@ function showSlides(n, viewPort2, viewPort3) {
         // }
         slides[slideIndex].style.display = "inline-block";
         //dots[slideIndex-1].className += " active";
-    }else if (viewPort3.matches) {
-        if (n > slides.length-1) { slideIndex = 0 }
-        if (n < 0) { slideIndex = slides.length-1 }
+    } else if (viewPort3.matches) {
+        if (n > slides.length -1) { slideIndex = 0 }
+        if (n < 0) { slideIndex = slides.length - 3 }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-
         slides[slideIndex].style.display = "inline-block";
-        slides[slideIndex+1].style.display = "inline-block";
-        slides[slideIndex+2].style.display = "inline-block";
-    }else{
-        if (n > slides.length-1) { slideIndex = 0 }
-        if (n < 0) { slideIndex = slides.length-1 }
+        slides[slideIndex + 1].style.display = "inline-block";
+        slides[slideIndex + 2].style.display = "inline-block";
+    } else {
+        if (n > slides.length -1) { slideIndex = 0 }
+        if (n < 0) { 
+            if(slides.length >= 4){
+                slideIndex = slides.length - 4; 
+            }else{
+                slideIndex = 0
+            }
+        }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-
-        slides[slideIndex ].style.display = "inline-block";
-        slides[slideIndex +1].style.display = "inline-block";
-        slides[slideIndex +2].style.display = "inline-block";
-        slides[slideIndex +3].style.display = "inline-block";
+        slides[slideIndex].style.display = "inline-block";
+        slides[slideIndex + 1].style.display = "inline-block";
+        slides[slideIndex + 2].style.display = "inline-block";
+        slides[slideIndex + 3].style.display = "inline-block";
 
     }
 
@@ -79,7 +83,9 @@ let slideIndex = 0;
 showSlides(slideIndex, viewPort2, viewPort3);
 
 function plusSlides(n) {
-    slideIndex = slideIndex + n;
+    if (viewPort2.matches) { slideIndex = slideIndex + n }
+    else if (viewPort3.matches) { slideIndex = slideIndex + 3 * n }
+    else { slideIndex = slideIndex + 4 * n }
     showSlides(slideIndex, viewPort2, viewPort3);
 }
 
@@ -94,5 +100,4 @@ function currentSlide(n) {
 function navCheckbox() {
     let naviToggle = document.getElementById('navi-toggle');
     naviToggle.checked = false;
-  }
-  
+}

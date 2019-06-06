@@ -8,6 +8,11 @@
             position:relative;
             width: 80%;
             margin: 0 auto;
+
+            @include respond(phone){
+              padding: 1rem 0;
+              width: 90%;
+            }
         }
 
         &-bottom{
@@ -30,8 +35,23 @@
                 width: 40rem;
                 object-fit: contain;
                 float:right;
-                margin-left:2rem;
+                margin:0 2rem 2rem 2rem;
+
+                @media only screen and (max-width: 46.25em) {
+                  width: 50%;
+                  margin: 1rem auto;
+                }
+
+                @include respond(phone){
+                  margin: 1rem auto;
+                  width: 100%;
+                }
             }
+
+            @include respond(tab-port){
+              padding: 2rem 2rem;
+            }
+
         }
 
         // &-timeline{
