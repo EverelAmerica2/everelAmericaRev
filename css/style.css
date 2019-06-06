@@ -449,14 +449,12 @@ a {
   color: #aaa; }
 
 .overview-top {
-  height: 49vh;
   background-color: #f9f7f6;
   padding: 4rem 6rem; }
   .overview-top-title {
     color: #000; }
 
 .overview-bottom {
-  height: 49vh;
   background-color: #fff;
   padding: 3rem 6rem;
   margin-top: 1rem;
@@ -471,41 +469,77 @@ a {
   object-fit: cover;
   padding: 2rem 2.5rem;
   overflow: hidden;
-  transition: all .2s ease; }
+  transition: all .2s ease;
+  overflow: hidden; }
   .overview-box-top-1 {
     background-image: linear-gradient(to right, rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.1)), url("../img/Canva-microphone.jpg");
     opacity: .8;
     width: calc((100% - 3rem) / 2);
     float: left;
     display: inline-block;
-    margin-right: 2.7rem; }
+    margin-right: 2.7rem;
+    margin-bottom: 1rem;
+    height: 35vh; }
     .overview-box-top-1:hover {
       color: #fff; }
+    @media only screen and (max-width: 37.5em) {
+      .overview-box-top-1 {
+        width: 95%;
+        height: 40vh;
+        margin: 1rem auto; } }
   .overview-box-top-2 {
     background-image: linear-gradient(to left, rgba(16, 29, 44, 0.6), rgba(16, 29, 44, 0.2)), url("../img/Canva-hourglass.jpg");
     opacity: .7;
     width: calc((100% - 3rem) / 2);
     float: left;
-    display: inline-block; }
+    display: inline-block;
+    height: 35vh;
+    margin-bottom: 1rem; }
     .overview-box-top-2:hover {
       color: #fff; }
+    @media only screen and (max-width: 37.5em) {
+      .overview-box-top-2 {
+        width: 95%;
+        height: 40vh;
+        margin: 1rem auto; } }
   .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
     background-image: radial-gradient(circle, rgba(16, 29, 44, 0.6) 0%, rgba(16, 29, 44, 0.8) 50%, #101d2c 100%);
     width: calc((100% - 3 * 3rem) / 4);
-    display: inline-block; }
+    display: inline-block;
+    height: 35vh;
+    margin-bottom: 1rem; }
     .overview-box-bottom-1:not(:last-child), .overview-box-bottom-2:not(:last-child), .overview-box-bottom-3:not(:last-child), .overview-box-bottom-4:not(:last-child) {
       margin-right: 2.7rem; }
     .overview-box-bottom-1:hover, .overview-box-bottom-2:hover, .overview-box-bottom-3:hover, .overview-box-bottom-4:hover {
       color: #fff; }
+    @media only screen and (max-width: 81.25em) {
+      .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
+        width: calc((100% - 2 * 3rem) / 2); } }
+    @media only screen and (max-width: 37.5em) {
+      .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
+        width: 95%;
+        height: 40vh;
+        margin: 1rem auto; } }
 
 .overview-title-big {
   font-size: 4rem; }
+  @media only screen and (max-width: 81.25em) {
+    .overview-title-big {
+      font-size: 3rem; } }
 
 .overview-title-small {
-  font-size: 3rem; }
+  font-size: 3rem;
+  font-weight: 700; }
+  @media only screen and (max-width: 81.25em) {
+    .overview-title-small {
+      font-size: 2.5rem; } }
 
 .overview-content {
-  font-size: 2rem; }
+  font-size: 2rem;
+  overflow: hidden; }
+  @media only screen and (max-width: 81.25em) {
+    .overview-content {
+      font-size: 1.8rem; } }
 
 .section-brands {
   height: 40vh;
@@ -591,7 +625,6 @@ a {
   color: #aaa;
   font-size: 1.6rem;
   line-height: 1.5;
-  overflow: hidden;
   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
   margin-top: 1rem; }
   @media only screen and (max-width: 56.25em) {
@@ -599,11 +632,11 @@ a {
       height: 50vh; } }
   @media only screen and (max-width: 37.5em) {
     .footer {
-      height: 60vh; } }
+      height: 80vh; } }
   .footer-box1, .footer-box2, .footer-box3 {
     width: calc((100% - 2rem) / 3);
     height: 80%;
-    float: left;
+    display: inline-block;
     padding: 1rem 4rem;
     position: relative; }
     @media only screen and (max-width: 56.25em) {
@@ -611,19 +644,23 @@ a {
         width: calc((100% - 1rem) / 3); } }
   @media only screen and (max-width: 37.5em) {
     .footer-box1, .footer-box2 {
-      width: calc((100% - 1rem) / 2);
+      width: 100%;
+      height: 40%;
       padding: 0.5rem 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .footer-box3 {
       display: none; } }
   .footer-box4 {
+    position: relative;
     color: #aaa;
     width: 100%;
+    height: 20%;
     text-align: center;
-    padding: 0.5rem; }
+    padding: 1rem; }
   .footer-center-box {
     position: absolute;
     transform: translate(-50%, -50%);
+    height: 100%;
     top: 50%;
     left: 50%;
     width: 70%; }
@@ -633,6 +670,9 @@ a {
     text-transform: uppercase;
     margin-top: 1.8rem;
     margin-bottom: 1.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer-title {
+        margin: 1rem auto; } }
   .footer-logo {
     padding: 2rem 4rem;
     position: absolute;
@@ -744,11 +784,14 @@ a {
 .section-product-item {
   width: 80%;
   margin: auto; }
+  @media only screen and (max-width: 56.25em) {
+    .section-product-item {
+      width: 95%; } }
 
 .product-item-box {
   width: 80%;
-  min-height: 30rem;
-  margin: 6rem 8rem;
+  display: inline-block;
+  margin: 6rem auto;
   padding: 2rem;
   text-align: center;
   font-size: 2rem;
@@ -760,6 +803,11 @@ a {
     .product-item-box a:hover {
       text-decoration: underline;
       color: #000; }
+  @media only screen and (max-width: 81.25em) {
+    .product-item-box {
+      width: 100%;
+      margin: 3rem auto;
+      padding: 1rem; } }
 
 .product-item-header {
   height: 17rem; }
@@ -769,23 +817,34 @@ a {
   display: inline-block;
   padding: 2rem 3rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 37.5em) {
+    .product-item-img {
+      width: 100%; } }
   .product-item-img img {
     max-height: 25rem;
     width: 80%;
     min-width: 21rem;
     object-fit: contain; }
+    @media only screen and (max-width: 37.5em) {
+      .product-item-img img {
+        max-height: 18rem; } }
 
 .product-item-content {
   color: #000;
   width: calc((100% - 2rem) / 2);
   display: inline-block;
-  float: left;
   text-align: left;
-  padding-bottom: 4rem;
-  font-size: 2rem; }
+  padding-bottom: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .product-item-content {
+      width: 90%;
+      margin: 0 auto; } }
   .product-item-content li {
     font-size: 2rem;
     line-height: 1.5; }
+    @media only screen and (max-width: 56.25em) {
+      .product-item-content li {
+        font-size: 1.8rem; } }
 
 .section-contact {
   color: #535353; }
@@ -852,6 +911,10 @@ a {
   position: relative;
   width: 80%;
   margin: 0 auto; }
+  @media only screen and (max-width: 37.5em) {
+    .section-about .about-top {
+      padding: 1rem 0;
+      width: 90%; } }
 
 .section-about .about-bottom {
   padding: 4rem 6rem; }
@@ -869,7 +932,18 @@ a {
     width: 40rem;
     object-fit: contain;
     float: right;
-    margin-left: 2rem; }
+    margin: 0 2rem 2rem 2rem; }
+    @media only screen and (max-width: 46.25em) {
+      .section-about .about-content-img {
+        width: 50%;
+        margin: 1rem auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .section-about .about-content-img {
+        margin: 1rem auto;
+        width: 100%; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-about .about-content {
+      padding: 2rem 2rem; } }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
