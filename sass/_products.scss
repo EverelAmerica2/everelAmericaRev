@@ -75,7 +75,9 @@
         color: $color-black;
         text-align: center;
 
-        
+        @include respond(phone){
+            font-size: 2rem;
+        }
     }
 
     &-content{

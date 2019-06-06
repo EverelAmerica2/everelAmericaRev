@@ -70,21 +70,21 @@ a {
   font-weight: 700; }
   @media only screen and (max-width: 37.5em) {
     .title-medium {
-      font-size: 2.5rem; } }
+      font-size: 3rem; } }
 
 .title-small {
   font-size: 3rem;
   font-weight: 700; }
   @media only screen and (max-width: 37.5em) {
     .title-small {
-      font-size: 2rem; } }
+      font-size: 2.5rem; } }
 
 .title-xs {
   font-size: 2rem;
   font-weight: 700; }
   @media only screen and (max-width: 37.5em) {
     .title-xs {
-      font-size: 1.5rem; } }
+      font-size: 2rem; } }
 
 .text-center {
   text-align: center; }
@@ -235,9 +235,17 @@ a {
   .header-pic {
     position: absolute;
     left: 4rem;
-    width: 5%; }
-    .header-pic-1, .header-pic-2, .header-pic-3, .header-pic-4, .header-pic-5, .header-pic-6 {
-      height: 10rem; }
+    width: 13.5%;
+    height: 78%;
+    overflow: hidden; }
+    .header-pic-img {
+      height: 10rem;
+      width: 9rem;
+      object-fit: contain; }
+      @media only screen and (max-width: 81.25em) {
+        .header-pic-img {
+          height: 8rem;
+          width: 7rem; } }
     @media only screen and (max-width: 56.25em) {
       .header-pic {
         display: none; } }
@@ -516,14 +524,27 @@ a {
   top: 50%;
   left: 50%; }
   .brands-box {
-    width: calc((100% - 3 * 3rem) / 4);
-    display: inline-block; }
-    .brands-box:not(:last-child) {
-      margin-right: 2rem; }
+    height: 100%;
+    position: relative; }
+    .brands-box-grid {
+      width: calc((100% - 3 * 3rem) / 4);
+      display: inline-block;
+      height: 100%;
+      position: relative; }
+      .brands-box-grid:not(:last-child) {
+        margin-right: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .brands-box-grid {
+          width: calc((100% - 3 * 3rem) / 3); } }
+      @media only screen and (max-width: 37.5em) {
+        .brands-box-grid {
+          width: 100%; } }
   .brands-img {
     position: absolute;
     transform: translateY(-50%);
-    top: 50%; }
+    top: 50%;
+    width: 100%;
+    text-align: center; }
   .brands-title {
     position: absolute;
     top: 2rem;
@@ -683,6 +704,9 @@ a {
   font-weight: 700;
   color: #000;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .box-title {
+      font-size: 2rem; } }
 
 .box-content {
   font-size: 1.8rem;
@@ -964,11 +988,25 @@ a {
 .section-distribution .dis-box-img img {
   height: 10rem; }
 
+.section-distribution .dis-brands-box {
+  width: calc((100% - 3 * 3rem) / 3);
+  display: inline-block;
+  height: 100%;
+  position: relative; }
+  .section-distribution .dis-brands-box:not(:last-child) {
+    margin-right: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section-distribution .dis-brands-box {
+      width: 100%; } }
+
 .section-distribution .distribution-box-1, .section-distribution .distribution-box-2 {
   width: 100%;
   padding: 2rem 4rem;
   margin: 0 auto;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .section-distribution .distribution-box-1, .section-distribution .distribution-box-2 {
+      padding: 1rem 0; } }
 
 .section-distribution .distribution-box-3 {
   height: 40vh;
@@ -980,22 +1018,18 @@ a {
 .section-distribution .distribution-title {
   color: #101d2c; }
 
-.section-distribution .distribution-details {
-  width: 70%;
-  margin: 0 auto;
-  padding: 2rem 0; }
-  .section-distribution .distribution-details-item {
-    padding: 3.5rem 0; }
-    .section-distribution .distribution-details-item:not(:last-child) {
-      border-bottom: 0.2rem solid #dfdede; }
-    .section-distribution .distribution-details-item img {
-      width: 20rem;
-      object-fit: contain; }
-    .section-distribution .distribution-details-item-content {
-      display: inline-block;
-      padding: 0 4rem;
-      font-size: 1.8rem; }
-    .section-distribution .distribution-details-item a {
-      color: inherit; }
-      .section-distribution .distribution-details-item a:hover {
-        text-decoration: underline; }
+.section-distribution .distribution-details-item {
+  padding: 3.5rem 0; }
+  .section-distribution .distribution-details-item:not(:last-child) {
+    border-bottom: 0.2rem solid #dfdede; }
+  .section-distribution .distribution-details-item img {
+    width: 20rem;
+    object-fit: contain; }
+  .section-distribution .distribution-details-item-content {
+    display: inline-block;
+    padding: 0 4rem;
+    font-size: 1.8rem; }
+  .section-distribution .distribution-details-item a {
+    color: inherit; }
+    .section-distribution .distribution-details-item a:hover {
+      text-decoration: underline; }

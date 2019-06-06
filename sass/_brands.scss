@@ -17,52 +17,35 @@
     left: 50%;
 
     &-box{
-        width: calc((100% - 3 * 3rem) / 4);
-        display: inline-block;
-        // position: absolute;
-        // transform: translate(-50%,-50%);
-        // top: 50%;
-        &:not(:last-child){
-            margin-right: 2rem;
+        height:100%;
+        position: relative;
+        
+
+        &-grid{
+            width: calc((100% - 3 * 3rem) / 4);
+            display: inline-block;
+            height:100%;
+            position: relative;
+        
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+
+            @include respond(tab-port){
+                width: calc((100% - 3 * 3rem) / 3);
+            }
+            @include respond(phone){
+                width: 100%;
+            }
         }
-        // margin-right: 2.7rem;
-
-        
-
-        // &-1{
-        //     position: absolute;
-        //     transform: translate(-50%,-50%);
-        //     top: 50%;
-        //     left: 12.5%;
-        // }
-
-        // &-2{
-        //     position: absolute;
-        //     transform: translate(-50%,-50%);
-        //     top: 50%;
-        //     left: 37.5%;
-        // }
-        
-        // &-3{
-        //     position: absolute;
-        //     transform: translate(-50%,-50%);
-        //     top: 50%;
-        //     left: 62.5%;
-        // }
-
-        // &-4{
-        //     position: absolute;
-        //     transform: translate(-50%,-50%);
-        //     top: 50%;
-        //     left: 87.5%;
-        // }
     }
 
     &-img{
         position: absolute;
         transform: translateY(-50%);
         top: 50%;
-
+        width:100%;
+        text-align: center;
     }
 
     &-title{

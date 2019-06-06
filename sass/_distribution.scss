@@ -53,6 +53,20 @@
         }
     }
 
+    .dis-brands-box{
+        width: calc((100% - 3 * 3rem) / 3);
+        display: inline-block;
+        height:100%;
+        position: relative;
+        
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+
+        @include respond(phone){
+            width: 100%;
+        }
+    }
     .distribution{
 
         &-box-1,&-box-2{
@@ -60,6 +74,10 @@
             padding: 2rem 4rem;
             margin:0 auto;
             position: relative;
+
+            @include respond(phone){
+                padding: 1rem 0;
+            }
         }
 
         &-box-3{
@@ -74,9 +92,9 @@
         }
 
         &-details{
-            width:70%;
-            margin:0 auto;
-            padding:2rem 0;
+            // width:70%;
+            // margin:0 auto;
+            // padding:2rem 0;
 
 
             &-item{
