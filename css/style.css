@@ -1107,3 +1107,60 @@ a {
     color: inherit; }
     .section-distribution .distribution-details-item a:hover {
       text-decoration: underline; }
+
+.section-markets {
+  width: 100%; }
+
+.market-box {
+  padding: 2rem 2rem;
+  width: 100%; }
+  .market-box-bkg-grey {
+    background-color: #dfdede; }
+
+.market-box-img {
+  width: 100%;
+  display: inline-block;
+  text-align: center; }
+  .market-box-img img {
+    width: 40rem;
+    height: 30rem;
+    object-fit: contain;
+    border-radius: 2rem; }
+
+.market-box-content {
+  font-size: 2rem;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  text-align: center; }
+  .market-box-content-subBox {
+    display: inline-block;
+    width: 20rem;
+    margin: 1rem auto;
+    vertical-align: top;
+    text-align: left;
+    cursor: pointer;
+    transition: all 1s ease-in; }
+    .market-box-content-subBox:not(:last-child) {
+      margin-right: 2rem; }
+    .market-box-content-subBox a {
+      color: #535353; }
+      .market-box-content-subBox a:hover {
+        cursor: pointer;
+        color: #000; }
+    .market-box-content-subBox ul {
+      transition: all 0.5s ease-in;
+      display: block;
+      transform: translateX(-98vw);
+      opacity: 0;
+      list-style: none; }
+      .market-box-content-subBox ul li {
+        padding: 0.5rem; }
+      .market-box-content-subBox ul li:hover {
+        background-color: #535353; }
+        .market-box-content-subBox ul li:hover a {
+          color: #fff; }
+
+.market-box-content-subBox li:hover ul {
+  opacity: 1;
+  transform: translateX(0); }
