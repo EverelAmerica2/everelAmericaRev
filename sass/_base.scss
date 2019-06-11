@@ -102,6 +102,9 @@ a{
         cursor:pointer;
     }
 
+    @include respond(phone){
+        color: $color-white;
+    }
 }
 
 .title-big{
