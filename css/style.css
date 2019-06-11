@@ -57,6 +57,9 @@ a {
   .btn-learnMore:hover {
     background-color: #101d2c;
     cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .btn-learnMore {
+      color: #fff; } }
 
 .title-big {
   font-size: 5rem;
@@ -212,13 +215,17 @@ a {
     transform: translate(-50%, -50%); }
     .header-content-title {
       display: inline-block;
-      text-transform: uppercase;
       font-size: 4rem;
-      border-bottom: 0.4rem solid #aaa;
       animation: moveInLeft .5s ease-in; }
+      @media only screen and (max-width: 37.5em) {
+        .header-content-title {
+          font-size: 3rem; } }
     .header-content-text {
       font-size: 2.5rem;
       animation: moveInRight .5s ease-in; }
+      @media only screen and (max-width: 37.5em) {
+        .header-content-text {
+          font-size: 2rem; } }
   .header-scroll {
     font-size: 10rem;
     position: absolute;
@@ -486,7 +493,8 @@ a {
       .overview-box-top-1 {
         width: 95%;
         height: 40vh;
-        margin: 1rem auto; } }
+        margin: 1rem auto;
+        color: #fff; } }
   .overview-box-top-2 {
     background-image: linear-gradient(to left, rgba(16, 29, 44, 0.6), rgba(16, 29, 44, 0.2)), url("../img/Canva-hourglass.jpg");
     opacity: .7;
@@ -501,7 +509,8 @@ a {
       .overview-box-top-2 {
         width: 95%;
         height: 40vh;
-        margin: 1rem auto; } }
+        margin: 1rem auto;
+        color: #fff; } }
   .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
     background-image: radial-gradient(circle, rgba(16, 29, 44, 0.6) 0%, rgba(16, 29, 44, 0.8) 50%, #101d2c 100%);
     width: calc((100% - 3 * 3rem) / 4);
@@ -519,7 +528,8 @@ a {
       .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
         width: 95%;
         height: 40vh;
-        margin: 1rem auto; } }
+        margin: 1rem auto;
+        color: #fff; } }
 
 .overview-title-big {
   font-size: 4rem; }
@@ -1107,3 +1117,101 @@ a {
     color: inherit; }
     .section-distribution .distribution-details-item a:hover {
       text-decoration: underline; }
+
+.section-markets {
+  width: 100%; }
+
+.market-box {
+  padding: 4rem 2rem;
+  width: 100%; }
+  .market-box-bkg-grey {
+    background-color: #dfdede; }
+  .market-box-title {
+    width: 100%; }
+
+.market-box-img {
+  width: 48%;
+  margin-right: 2.5rem;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top; }
+  @media only screen and (max-width: 56.25em) {
+    .market-box-img {
+      width: 100%;
+      margin: 0;
+      text-align: center; } }
+  .market-box-img img {
+    width: 40rem;
+    border-radius: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .market-box-img img {
+        width: 60%;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .market-box-img img {
+        width: 70%;
+        margin: 0 auto; } }
+
+.market-box-content {
+  font-size: 2rem;
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  text-align: center; }
+  @media only screen and (max-width: 81.25em) {
+    .market-box-content {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .market-box-content {
+      width: 100%;
+      margin: 0;
+      text-align: center; } }
+  .market-box-content-subBox {
+    display: block;
+    width: 20rem;
+    margin: 1rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .market-box-content-subBox {
+        margin-left: 20%; } }
+    @media only screen and (max-width: 37.5em) {
+      .market-box-content-subBox {
+        margin-left: 15%; } }
+    .market-box-content-subBox a {
+      color: #535353; }
+      .market-box-content-subBox a:hover {
+        cursor: pointer;
+        color: #000; }
+    .market-box-content-subBox li {
+      width: 100%; }
+      @media only screen and (max-width: 56.25em) {
+        .market-box-content-subBox li {
+          text-decoration: underline; } }
+    .market-box-content-subBox ul {
+      width: 100%;
+      display: block;
+      height: auto;
+      transform: translateX(98vw);
+      position: absolute;
+      top: 0;
+      right: -100%;
+      opacity: 0;
+      list-style: none;
+      background-color: #f9f7f6;
+      border-radius: 10px; }
+      .market-box-content-subBox ul li {
+        padding: 0.5rem;
+        border-radius: 10px; }
+        @media only screen and (max-width: 56.25em) {
+          .market-box-content-subBox ul li {
+            text-decoration: none; } }
+      .market-box-content-subBox ul li:hover {
+        background-color: #535353; }
+        .market-box-content-subBox ul li:hover a {
+          color: #fff; }
+
+.market-box-content-subBox li:hover ul {
+  opacity: 1;
+  transform: translateX(0); }

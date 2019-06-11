@@ -1,0 +1,146 @@
+.section-markets{
+    width: 100%;
+}
+
+.market-box{
+    padding: 4rem 2rem;
+    width: 100%;
+    // margin: 1rem auto;
+    // &:not(:last-child){
+    //     border-bottom: 2px solid rgba($color-black, .5);
+    // }
+
+    &-bkg-grey{
+        background-color: $color-grey-light-3;
+    }
+
+    &-title{
+        width:100%;
+    }
+}
+
+.market-box-img{
+    width: 48%;
+    margin-right:2.5rem;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+
+    @include respond(tab-port){
+        width:100%;
+        margin:0;
+        text-align: center;
+    }
+    
+
+    img{
+        width: 40rem;
+        //height: 20rem;
+        //object-fit: contain;
+        border-radius: 1rem;
+
+        @include respond(tab-port){
+            width:60%;
+            margin:0 auto;
+        }
+
+        @include respond(phone){
+            width:70%;
+            margin:0 auto;
+        }
+    }
+}
+
+.market-box-content{
+    font-size: 2rem;
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    text-align: center;
+
+    @include respond(tab-land){
+        font-size: 1.8rem;
+    }
+
+    @include respond(tab-port){
+        width:100%;
+        margin:0;
+        text-align: center;
+    }
+
+    &-subBox{
+        //display: inline-block;
+        display: block;
+        //float:left;
+        width: 20rem;
+        margin: 1rem;
+        //vertical-align: top;
+        text-align: left;
+        cursor: pointer;
+        //transition: all 1s ease-in;
+        position: relative;
+        
+        // &:not(:last-child){
+        //     margin-right: 2rem;
+        // }
+
+        @include respond(tab-port){
+            margin-left: 20%;
+        }
+
+        @include respond(phone){
+            margin-left: 15%;
+        }
+
+        a{
+            color: $color-grey-dark-1;
+            &:hover{
+                cursor: pointer;
+                color: $color-black;
+            }
+        }
+
+        li{
+            width:100%;
+
+            @include respond(tab-port){
+                text-decoration: underline;
+            }
+        }
+
+        ul{
+            width: 100%;
+            display: block;
+            height:auto;
+            transform: translateX(98vw);
+            position: absolute;
+            top: 0;
+            right:-100%;
+            opacity: 0;
+            list-style: none;
+            background-color: $color-grey-light-1;
+            border-radius: 10px;
+
+            li{
+                padding: 0.5rem;
+                border-radius: 10px;
+                @include respond(tab-port){
+                    text-decoration: none;
+                }
+            }
+            li:hover{
+                background-color: $color-grey-dark-1;
+
+                a{
+                    color: $color-white;
+                }
+            }
+        }
+    }
+} 
+
+.market-box-content-subBox li:hover ul{
+    // height:auto;
+    opacity: 1;
+    transform: translateX(0);
+}
