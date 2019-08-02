@@ -16,6 +16,9 @@
     &-content{
         width:50%;
         margin: auto;
+        @include respond(phone){
+            width: 100%;
+        }
     }
 
     &-text{
@@ -24,12 +27,20 @@
         font-size: 1.8rem;
         margin-bottom: 2rem;
         text-align: justify;
+
+        @include respond(phone){
+            width: 90%;
+        }
     }
 
     &-name, &-company,&-email, &-number{
         font-size: inherit;
         width: 70%;
         line-height:2;
+
+        @include respond(phone){
+            width: 90%;
+        }
 
     }
 
@@ -38,7 +49,10 @@
         width: 70%;
         line-height:2;
         height:16rem;
-        
+
+        @include respond(phone){
+            width: 90%;
+        }
     }
 
     button{
@@ -74,6 +88,10 @@
     &-box{
         width:50%;
         margin: auto;
+
+        @include respond(phone){
+            width: 90%;
+        }
     }
 
     &-title{
