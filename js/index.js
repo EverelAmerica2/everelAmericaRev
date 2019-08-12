@@ -1,3 +1,52 @@
+/**
+ * render Footer
+ */
+const printFooter = function(){
+    $('.footer').empty();
+    let year = new Date().getFullYear();
+
+    $('.footer').append(`
+    <div class='footer-box1'>
+            <div class='footer-center-box'>
+                <p class='footer-title'>Everel America</p>
+                <p class='footer-content'>5095 Bristol Industrial Way</p>
+                <p class='footer-content'>Buford, Georgia, 30518</p>
+                <p class='footer-title'>contact Us</p>
+                <p class='footer-content'>Phone: 678-765-8966</p>
+                <p class='footer-content'>Email: sales@everelamerica.com</p>
+            </div>
+        </div>
+        <div class='footer-box2'>
+            <div class='footer-center-box'>
+                <p class='footer-title'>Hours</p>
+                <p class='footer-content'>Mon. - Thur.: 8 am - 5 pm </p>
+                <p class='footer-content'>Fri.: 8 am - 4 pm </p>
+                <p class='footer-title'>Follow Us On</p>
+                <p class='footer-media-logo'>
+                    <a href='https://www.facebook.com/Everel-America-252511976225/' atl='facebook link'
+                        target='_blank'><i class="fab fa-facebook"></i></a>
+                    <a href='https://www.linkedin.com/in/everelamerica/' atl='linkedin link' target='_blank'><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href='https://twitter.com/EverelAmerica' atl='twitter link' target='_blank'><i
+                            class="fab fa-twitter"></i></a>
+                </p>
+            </div>
+        </div>       
+        <div class="footer-box3">
+            <div class='footer-logo'><img src='./img/logo-new.png' stl='everel america logo' /></div>
+        </div>
+        <div class='footer-box4'>Everel America &copy; ${year}<br/>
+            <img height="40px" src='./img/Visa-256.PNG'/>
+            <img height="40px" src='./img/American-Express-256.PNG'/>
+            <img height="40px" src='./img/Master-Card-256.png'/>
+        </div>`);
+}
+printFooter();
+
+
+
+
+
 /*
  *sticky feature for nav-bar 
  */
@@ -101,3 +150,4 @@ function navCheckbox() {
     let naviToggle = document.getElementById('navi-toggle');
     naviToggle.checked = false;
 }
+
