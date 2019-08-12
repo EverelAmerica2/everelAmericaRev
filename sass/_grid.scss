@@ -66,36 +66,35 @@
 
 
 .grid-row-3{
-    // display: grid;
-    // grid-template-rows: 1fr;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 2rem;
     width: 80%;
     text-align: center;
     margin:3rem auto;
-    // justify-items: center;
-    // align-items: center;
-    // width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+
 
     @include respond(tab-port){
         width:95%;
     }
 
     .grid-col-1-3{
-        // display: grid;
-        // grid-row: span 1;
-        // grid-column: span 1;
-        width: 80%;
-        // justify-items: center;
-        // align-items: center;
         width: calc((100% - 2 * 2rem) / 3);
         display: inline-block;
+        @include respond(tab-port){
+            min-width: 70%;
+        }
+        @include respond(phone){
+            min-width: 100%;
+        }
     }
 
     .grid-col-2-3{
-        width: 80%;
         width: calc((100% - 2 * 2rem) * 2 / 3);
         display: inline-block;
+        @include respond(tab-port){
+            min-width: 70%;
+        }
+        @include respond(phone){
+            min-width: 100%;
+        }
     }
 
 

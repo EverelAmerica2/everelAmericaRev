@@ -36,9 +36,9 @@ const printFooter = function(){
             <div class='footer-logo'><img src='./img/logo-new.png' stl='everel america logo' /></div>
         </div>
         <div class='footer-box4'>Everel America &copy; ${year}<br/>
-            <img height="40px" src='./img/Visa-256.PNG'/>
-            <img height="40px" src='./img/American-Express-256.PNG'/>
-            <img height="40px" src='./img/Master-Card-256.png'/>
+            <img height="35px" src='./img/Visa-256.PNG'/>
+            <img height="35px" src='./img/American-Express-256.PNG'/>
+            <img height="35px" src='./img/Master-Card-256.png'/>
         </div>`);
 }
 printFooter();
