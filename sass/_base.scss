@@ -60,7 +60,7 @@ body {
 .margin-bottom-medium{
     margin-bottom: 3rem;
     @include respond(phone){
-        margin-bottom: 2rem;
+        margin-bottom: 1.8rem;
     }
 }
 
@@ -99,6 +99,10 @@ a{
     &:hover{
         background-color: $color-primary;
         cursor:pointer;
+    }
+
+    @include respond(tab-port){
+        margin: 1rem 0;
     }
 
     @include respond(phone){

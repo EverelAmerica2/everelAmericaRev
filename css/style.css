@@ -28,7 +28,7 @@ body {
   margin-bottom: 3rem; }
   @media only screen and (max-width: 37.5em) {
     .margin-bottom-medium {
-      margin-bottom: 2rem; } }
+      margin-bottom: 1.8rem; } }
 
 .margin-bottom-small {
   margin-bottom: 2rem; }
@@ -57,6 +57,9 @@ a {
   .btn-learnMore:hover {
     background-color: #101d2c;
     cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .btn-learnMore {
+      margin: 1rem 0; } }
   @media only screen and (max-width: 37.5em) {
     .btn-learnMore {
       color: #fff; } }
@@ -208,7 +211,7 @@ a {
     @media only screen and (max-width: 56.25em) {
       .header-logo {
         width: 15rem;
-        height: 10rem; } }
+        height: 9rem; } }
     .header-logo img {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -571,7 +574,7 @@ a {
   font-weight: 700; }
   @media only screen and (max-width: 81.25em) {
     .overview-title-small {
-      font-size: 2.5rem; } }
+      font-size: 2.2rem; } }
 
 .overview-content {
   font-size: 2rem;
@@ -579,6 +582,9 @@ a {
   @media only screen and (max-width: 81.25em) {
     .overview-content {
       font-size: 1.8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .overview-content {
+      height: 6rem; } }
 
 .section-brands {
   height: 40vh;
@@ -712,7 +718,7 @@ a {
     margin-bottom: 1.5rem; }
     @media only screen and (max-width: 56.25em) {
       .footer-title {
-        margin: 1rem auto; } }
+        margin: 0.8rem auto; } }
   .footer-logo {
     padding: 2rem 4rem;
     position: absolute;

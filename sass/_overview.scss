@@ -20,7 +20,6 @@
         margin-bottom: 1rem;
 
         &-title{
-
             color:$color-black;
         }
         
@@ -125,7 +124,7 @@
         font-size: 3rem;
         font-weight: 700;
         @include respond(tab-land){
-            font-size: 2.5rem;
+            font-size: 2.2rem;
         }
     }
 
@@ -136,5 +135,8 @@
         @include respond(tab-land){
             font-size: 1.8rem;
         }
+        @include respond(tab-port){
+            height: 6rem;
+        } 
     }
 }
