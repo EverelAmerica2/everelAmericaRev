@@ -22,7 +22,6 @@ $gutter-horizontal: 2rem;
 
 
 
-
 //initial setup
 *, 
 *::after, 
@@ -61,7 +60,7 @@ body {
 .margin-bottom-medium{
     margin-bottom: 3rem;
     @include respond(phone){
-        margin-bottom: 2rem;
+        margin-bottom: 1.8rem;
     }
 }
 
@@ -100,6 +99,10 @@ a{
     &:hover{
         background-color: $color-primary;
         cursor:pointer;
+    }
+
+    @include respond(tab-port){
+        margin: 1rem 0;
     }
 
     @include respond(phone){
@@ -158,3 +161,17 @@ a{
 
 .float-right{float: right;}
 .float-left{float:left;}
+
+.mobile-display{
+    display:  none !important;
+    @include respond(tab-port){
+        display: inline-block !important;
+    }
+}
+
+.desktop-display{
+    display: inline-block !important;
+    @include respond(tab-port){
+        display: none !important;
+    }
+}

@@ -6,13 +6,14 @@
     color: $color-grey-light-2;
     font-size: 1.6rem;
     line-height: 1.5;
-    //overflow: hidden;
+    overflow: hidden;
     box-shadow: 0 -5px 5px rgba($color-black,.5);
     margin-top: 1rem;
 
-    @include respond(tab-port){
-        height:50vh;
+    @include respond(tab-land){
+        height: 50vh;
     }
+
     @include respond(phone){
         height:80vh;
     }
@@ -73,7 +74,7 @@
         margin-bottom: 1.5rem;
 
         @include respond(tab-port){
-            margin: 1rem auto;
+            margin: 0.8rem auto;
         }
     }
 
