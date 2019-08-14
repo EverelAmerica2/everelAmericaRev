@@ -33,7 +33,7 @@ const printFooter = function(){
             </div>
         </div>       
         <div class="footer-box3">
-            <div class='footer-logo'><img src='./img/logo-new.png' stl='everel america logo' /></div>
+            <div class='footer-logo'><img src='./img/logo-new.png' atl='everel america logo' /></div>
         </div>
         <div class='footer-box4'>Everel America &copy; ${year}<br/>
             <img height="35px" src='./img/Visa-256.PNG'/>
