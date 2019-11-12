@@ -489,9 +489,13 @@ a {
 
 .overview-top {
   background-color: #f9f7f6;
-  padding: 4rem 6rem; }
+  padding: 4rem 6rem;
+  height: 52vh; }
   .overview-top-title {
     color: #000; }
+  @media only screen and (max-width: 37.5em) {
+    .overview-top {
+      height: 95vh; } }
 
 .overview-bottom {
   background-color: #fff;

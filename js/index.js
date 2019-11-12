@@ -23,22 +23,22 @@ const printFooter = function(){
                 <p class='footer-content'>Fri.: 8 am - 4 pm </p>
                 <p class='footer-title'>Follow Us On</p>
                 <p class='footer-media-logo'>
-                    <a href='https://www.facebook.com/Everel-America-252511976225/' atl='facebook link'
+                    <a href='https://www.facebook.com/Everel-America-252511976225/' alt='facebook link'
                         target='_blank'><i class="fab fa-facebook"></i></a>
-                    <a href='https://www.linkedin.com/in/everelamerica/' atl='linkedin link' target='_blank'><i
+                    <a href='https://www.linkedin.com/in/everelamerica/' alt='linkedin link' target='_blank'><i
                             class="fab fa-linkedin"></i></a>
-                    <a href='https://twitter.com/EverelAmerica' atl='twitter link' target='_blank'><i
+                    <a href='https://twitter.com/EverelAmerica' alt='twitter link' target='_blank'><i
                             class="fab fa-twitter"></i></a>
                 </p>
             </div>
         </div>       
         <div class="footer-box3">
-            <div class='footer-logo'><img src='./img/logo-new.png' stl='everel america logo' /></div>
+            <div class='footer-logo'><img src='./img/logo-new.png' alt='everel america logo' /></div>
         </div>
         <div class='footer-box4'>Everel America &copy; ${year}<br/>
-            <img height="35px" src='./img/Visa-256.PNG'/>
-            <img height="35px" src='./img/American-Express-256.PNG'/>
-            <img height="35px" src='./img/Master-Card-256.png'/>
+            <img height="35px" alt="Visa credit card" src='./img/Visa-256.PNG'/>
+            <img height="35px" alt="American Express credit card" src='./img/American-Express-256.PNG'/>
+            <img height="35px" alt="master card credit card" src='./img/Master-Card-256.png'/>
         </div>`);
 }
 printFooter();
