@@ -4,7 +4,11 @@
 const printFooter = function(){
     $('.footer').empty();
     let year = new Date().getFullYear();
-
+    let url = window.location.href;
+    let prefix = "";
+    if(url.includes("product-type") || url.includes("product-details")){
+        prefix = ".";
+    }
     $('.footer').append(`
     <div class='footer-box1'>
             <div class='footer-center-box'>
@@ -33,18 +37,66 @@ const printFooter = function(){
             </div>
         </div>       
         <div class="footer-box3">
-            <div class='footer-logo'><img src='./img/logo-new.png' alt='everel america logo' /></div>
+            <div class='footer-logo'><img src='${prefix}./img/logo-new.png' alt='everel america logo' /></div>
         </div>
         <div class='footer-box4'>Everel America &copy; ${year}<br/>
-            <img height="35px" alt="Visa credit card" src='./img/Visa-256.PNG'/>
-            <img height="35px" alt="American Express credit card" src='./img/American-Express-256.PNG'/>
-            <img height="35px" alt="master card credit card" src='./img/Master-Card-256.png'/>
+            <img height="35px" alt="Visa credit card" src='${prefix}./img/Visa-256.PNG'/>
+            <img height="35px" alt="American Express credit card" src='${prefix}./img/American-Express-256.PNG'/>
+            <img height="35px" alt="master card credit card" src='${prefix}./img/Master-Card-256.png'/>
         </div>`);
 }
 printFooter();
 
 
+/*
+ * render navigation bar
+ */
+const printNavigation = function(){
+    let url = window.location.href;
+    let prefix = "";
+    if(url.includes("product-type") || url.includes("product-details")){
+        prefix = "../";
+    }
+    $('.header-nav').empty();
+    $('.header-nav').append(`
+    <a href="index.html" class="header-nav-item">Home</a>
+                <a href="${prefix}about.html" class="header-nav-item">About the Company</a>
+                <a href="${prefix}products.html" class="header-nav-item">Products</a>
+                <a href="${prefix}distribution.html" class="header-nav-item">Sales Network</a>
+                <a href="${prefix}contact.html" class="header-nav-item">Contact Us</a>
+    `);
 
+    $('.navigation__nav').empty();
+    $('.navigation__nav').append(`
+    <ul class="navigation__list">
+    <li class="navigation__item"><a href="${prefix}index.html" class="navigation__link" ><span>01</span>Home</a></li>
+    <li class="navigation__item"><a href="${prefix}about.html" class="navigation__link" ><span>02</span>About Us</a></li>
+    <li class="navigation__item"><a href="${prefix}products.html" class="navigation__link" ><span>03</span>Products</a></li>
+    <li class="navigation__item"><a href="${prefix}distribution.html" class="navigation__link" ><span>04</span>Sales Network</a></li>
+    <li class="navigation__item"><a href="${prefix}contact.html" class="navigation__link" ><span>05</span>Contact Us</a></li>
+    </ul>
+    `);
+}
+
+printNavigation();
+
+const printHeaderPic = function(){
+    $('.header-pic').empty();
+    $('.header-pic').append(`
+    <img src="./img/A1.png" alt="A1 picture" class="header-pic-img">
+    <img src="./img/timer-oven-control-transBkg.png" alt="oven control image" class="header-pic-img">
+    <img src="./img/B4MASK.png" alt="B4MASK picture" class="header-pic-img">
+    <img src="./img/timer-electronic-transBkg.png" alt="electronic timer image" class="header-pic-img">
+    <img src="./img/SW.png" alt="SW picture" class="header-pic-img">
+    <img src="./img/timer-per-freezer-transBkg.png" alt="freezer timer image" class="header-pic-img">
+    <img src="./img/B4.png" alt="B4 picture" class="header-pic-img">
+    <img src="./img/smart-encoder-transBkg.png" alt="smart encoder image" class="header-pic-img">
+    <img src="./img/ventilation-1-transBkg.png" alt="ventilation unit image" class="header-pic-img">
+    `);
+
+}
+
+printHeaderPic();
 
 
 /*
