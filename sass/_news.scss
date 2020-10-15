@@ -1,0 +1,108 @@
+.section-news{
+    .news{
+        &-top{
+            padding: 4rem 6rem;
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            height: calc( 40vh + 8rem);
+
+            @include respond(phone){
+                padding: 1rem 0;
+                width: 90%;
+            }
+        }
+
+        &-bottom{
+            padding: 4rem 6rem;
+            position:relative;
+            width: 80%;
+            margin: 0 auto;
+
+            @include respond(phone){
+            padding: 1rem 0;
+            width: 90%;
+            }
+        }
+
+        &-title{
+            border-bottom:.2rem solid $color-grey-light-2;
+            padding-bottom:1rem;
+            color:$color-primary;
+        }
+
+        &-content{
+            padding: 2rem 8rem;
+            font-size: 1.8rem;
+            text-align: justify;
+
+            &-img{
+                width: 40rem;
+                object-fit: contain;
+                float:right;
+                margin:0 2rem 2rem 2rem;
+
+                @media only screen and (max-width: 46.25em) {
+                    width: 50%;
+                    margin: 1rem auto;
+                }
+
+                @include respond(phone){
+                    margin: 1rem auto;
+                    width: 100%;
+                }
+            }
+
+            @include respond(tab-port){
+                padding: 2rem 2rem;
+            }
+        }
+
+        &-box1{
+            width: calc((100% - 2 * #{$gutter-horizontal}) / 4 * 2 + #{$gutter-horizontal});
+            height: 40vh;
+            //display: inline-block;
+            float:left;
+            margin-right: calc(#{$gutter-horizontal} * 0.7);
+            background-color:#777777;
+        }
+        &-box2, &-box3, &-box4, &-box5{
+            width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+            height: calc((40vh - #{$gutter-horizontal}) / 2);
+            //display: inline-block;
+            float: left;
+            background-color: #777777;
+        }
+
+        &-box2{
+            margin-right: calc(#{$gutter-horizontal} * 0.7);
+            margin-bottom: $gutter-horizontal;
+
+            @include respond(phone){
+                width: calc((100% - #{$gutter-horizontal} * 2) / 2);
+                margin-right: 0;
+            }
+        }
+
+        &-box3{
+            margin-bottom: $gutter-horizontal;
+            @include respond(phone){
+                display: none;
+            }
+        }
+        &-box4{
+            margin-right: calc(#{$gutter-horizontal} * 0.7);
+
+            @include respond(phone){
+                width: calc((100% - #{$gutter-horizontal} * 2) / 2);
+                margin-right: 0;
+            }
+        }
+        &-box5{
+            @include respond(phone){
+                display: none;
+            }
+        }
+ 
+    }
+}
