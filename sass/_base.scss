@@ -86,6 +86,19 @@ a{
     }
 }
 
+.center-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bottom-box{
+    position: absolute;
+    top:80%;
+    transform: translate(0%,-50%);
+}
+
 .btn-learnMore{
     line-height:1.5;
     background:none;
