@@ -61,6 +61,7 @@ const printNavigation = function(){
     $('.header-nav').append(`
         <a href="${prefix}index.html" class="header-nav-item">Home</a>
         <a href="${prefix}about.html" class="header-nav-item">About the Company</a>
+        <a href="${prefix}news.html" class="header-nav-item">News</a>
         <a href="${prefix}products.html" class="header-nav-item">Products</a>
         <a href="${prefix}distribution.html" class="header-nav-item">Sales Network</a>
         <a href="${prefix}contact.html" class="header-nav-item">Contact Us</a>
@@ -71,9 +72,10 @@ const printNavigation = function(){
     <ul class="navigation__list">
         <li class="navigation__item"><a href="${prefix}index.html" class="navigation__link" ><span>01</span>Home</a></li>
         <li class="navigation__item"><a href="${prefix}about.html" class="navigation__link" ><span>02</span>About Us</a></li>
-        <li class="navigation__item"><a href="${prefix}products.html" class="navigation__link" ><span>03</span>Products</a></li>
-        <li class="navigation__item"><a href="${prefix}distribution.html" class="navigation__link" ><span>04</span>Sales Network</a></li>
-        <li class="navigation__item"><a href="${prefix}contact.html" class="navigation__link" ><span>05</span>Contact Us</a></li>
+        <li class="navigation__item"><a href="${prefix}news.html" class="navigation__link" ><span>03</span>News</a></li>
+        <li class="navigation__item"><a href="${prefix}products.html" class="navigation__link" ><span>04</span>Products</a></li>
+        <li class="navigation__item"><a href="${prefix}distribution.html" class="navigation__link" ><span>05</span>Sales Network</a></li>
+        <li class="navigation__item"><a href="${prefix}contact.html" class="navigation__link" ><span>06</span>Contact Us</a></li>
     </ul>
     `);
 }
@@ -131,10 +133,10 @@ function scrollArrow() {
  * news box
  */
 
-function newsBoxFunc(){
+function newsBoxFunc1(){
     console.log("get in newsBox!");
     $(`#news-bottom`).empty();
-    $(`#news-bottom`).append(`<h2 class="news-title title-medium margin-bottom-medium text-center">Everel America</h2>
+    $(`#news-bottom`).append(`<h2 class="news-title title-medium margin-bottom-medium text-center">Everel America1</h2>
     <div class="news-content">
         <img class='news-content-img' src='./img/statue-of-liberty.jpg' />
         <p>Everel is a leading supplier of electromechanical components for major worldwide household appliance companies.
@@ -151,11 +153,96 @@ function newsBoxFunc(){
     </div>`);
 }       
 
-$("#news-btn1").on("click", newsBoxFunc);
+$("#news-btn1").on("click", newsBoxFunc1);
+
+function newsBoxFunc2(){
+    console.log("get in newsBox!");
+    $(`#news-bottom`).empty();
+    $(`#news-bottom`).append(`<h2 class="news-title title-medium margin-bottom-medium text-center">Everel America2</h2>
+    <div class="news-content">
+        <img class='news-content-img' src='./img/statue-of-liberty.jpg' />
+        <p>Everel is a leading supplier of electromechanical components for major worldwide household appliance companies.
+            Through its own brands, Molveno, Dreefs, Giem and Signal Lux, Everel offers a wide range of products for household appliances sector: switches, selectors, signal lights, motors and heating elements, custom ventilation units for ovens. Although the focus is mostly on electromechanical items, Everel is also investing in electronic products such as encoders and PCBs.                        
+            <br/>
+            <br/>
+        </p>
+        <p>
+            
+        Innovation, quality and efficiency are the values Everel relies on to satisfy customers and win the competition on the global market. 
+        These are the milestones that make Everel a market leader, with a wide product range and advanced solutions, capable of satisfying the most challenging market requirements.
+        </p>
+        
+    </div>`);
+}       
+
+$("#news-btn2").on("click", newsBoxFunc2);
+
+function newsBoxFunc3(){
+    console.log("get in newsBox!");
+    $(`#news-bottom`).empty();
+    $(`#news-bottom`).append(`<h2 class="news-title title-medium margin-bottom-medium text-center">Everel America3</h2>
+    <div class="news-content">
+        <img class='news-content-img' src='./img/statue-of-liberty.jpg' />
+        <p>Everel is a leading supplier of electromechanical components for major worldwide household appliance companies.
+            Through its own brands, Molveno, Dreefs, Giem and Signal Lux, Everel offers a wide range of products for household appliances sector: switches, selectors, signal lights, motors and heating elements, custom ventilation units for ovens. Although the focus is mostly on electromechanical items, Everel is also investing in electronic products such as encoders and PCBs.                        
+            <br/>
+            <br/>
+        </p>
+        <p>
+            
+        Innovation, quality and efficiency are the values Everel relies on to satisfy customers and win the competition on the global market. 
+        These are the milestones that make Everel a market leader, with a wide product range and advanced solutions, capable of satisfying the most challenging market requirements.
+        </p>
+        
+    </div>`);
+}       
+
+$("#news-btn3").on("click", newsBoxFunc3);
+
+function newsBoxFunc4(){
+    console.log("get in newsBox!");
+    $(`#news-bottom`).empty();
+    $(`#news-bottom`).append(`<h2 class="news-title title-medium margin-bottom-medium text-center">Everel America4</h2>
+    <div class="news-content">
+        <img class='news-content-img' src='./img/statue-of-liberty.jpg' />
+        <p>Everel is a leading supplier of electromechanical components for major worldwide household appliance companies.
+            Through its own brands, Molveno, Dreefs, Giem and Signal Lux, Everel offers a wide range of products for household appliances sector: switches, selectors, signal lights, motors and heating elements, custom ventilation units for ovens. Although the focus is mostly on electromechanical items, Everel is also investing in electronic products such as encoders and PCBs.                        
+            <br/>
+            <br/>
+        </p>
+        <p>
+            
+        Innovation, quality and efficiency are the values Everel relies on to satisfy customers and win the competition on the global market. 
+        These are the milestones that make Everel a market leader, with a wide product range and advanced solutions, capable of satisfying the most challenging market requirements.
+        </p>
+        
+    </div>`);
+}       
+
+$("#news-btn4").on("click", newsBoxFunc4);
 
 
+function newsBoxFunc5(){
+    console.log("get in newsBox!");
+    $(`#news-bottom`).empty();
+    $(`#news-bottom`).append(`<h2 class="news-title title-medium margin-bottom-medium text-center">Everel America5</h2>
+    <div class="news-content">
+        <img class='news-content-img' src='./img/statue-of-liberty.jpg' />
+        <p>Everel is a leading supplier of electromechanical components for major worldwide household appliance companies.
+            Through its own brands, Molveno, Dreefs, Giem and Signal Lux, Everel offers a wide range of products for household appliances sector: switches, selectors, signal lights, motors and heating elements, custom ventilation units for ovens. Although the focus is mostly on electromechanical items, Everel is also investing in electronic products such as encoders and PCBs.                        
+            <br/>
+            <br/>
+        </p>
+        <p>
+            
+        Innovation, quality and efficiency are the values Everel relies on to satisfy customers and win the competition on the global market. 
+        These are the milestones that make Everel a market leader, with a wide product range and advanced solutions, capable of satisfying the most challenging market requirements.
+        </p>
+        
+    </div>`);
+}       
 
-
+$("#news-btn5").on("click", newsBoxFunc5);
 
 
 /*

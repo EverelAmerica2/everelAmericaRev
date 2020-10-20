@@ -1283,13 +1283,14 @@ a {
   transform: translateX(0); }
 
 .section-news {
-  position: relative; }
+  position: relative;
+  transition: all .5s .2s; }
   .section-news .news-top {
     padding: 4rem 6rem;
     position: relative;
     width: 80%;
     margin: 0 auto;
-    height: calc( 40vh + 8rem); }
+    height: calc( 40vh + 12rem); }
     @media only screen and (max-width: 37.5em) {
       .section-news .news-top {
         padding: 1rem 0;
@@ -1297,13 +1298,19 @@ a {
   .section-news .news-bottom {
     padding: 4rem 6rem;
     position: relative;
-    width: 100%;
-    margin: 0 auto;
-    height: 10vh; }
+    width: 80%;
+    margin: 0 auto; }
     @media only screen and (max-width: 37.5em) {
       .section-news .news-bottom {
         padding: 1rem 0;
         width: 90%; } }
+  .section-news .news-btn {
+    background: none;
+    border: none; }
+    .section-news .news-btn:focus {
+      background: none;
+      border: none;
+      outline: none; }
   .section-news .news-title {
     border-bottom: 0.2rem solid #aaa;
     padding-bottom: 1rem;
@@ -1347,6 +1354,17 @@ a {
     float: left;
     background-color: #777777;
     position: relative; }
+  .section-news .news-box6 {
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem 0.5rem;
+    float: left;
+    text-align: right; }
+    .section-news .news-box6 a {
+      font-size: 1.8rem;
+      color: black; }
+      .section-news .news-box6 a:hover {
+        text-decoration: underline; }
   .section-news .news-box2 {
     margin-right: calc(2rem * 0.7);
     margin-bottom: 2rem; }
