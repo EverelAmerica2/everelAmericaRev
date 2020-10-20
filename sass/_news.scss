@@ -8,6 +8,7 @@
             width: 80%;
             margin: 0 auto;
             height: calc( 40vh + 12rem);
+            transition: .2s;
 
 
             @include respond(phone){
@@ -21,6 +22,7 @@
             position:relative;
             width: 80%;
             margin: 0 auto;
+            transition: .2s;
 
 
             @include respond(phone){
@@ -32,6 +34,13 @@
         &-btn{
             background: none;
             border:none;
+            transition: .2s;
+
+
+            &:hover{
+                //transform: scale(1.005);
+                font-size: 3.2rem;
+            }
 
             &:focus{
             background: none;
@@ -107,8 +116,10 @@
             a{
                 font-size: 1.8rem;
                 color: black;
+                transition: .2s;
                 &:hover{
                     text-decoration: underline;
+                    font-size: 1.9rem;
                 }
             }
             
