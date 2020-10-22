@@ -117,7 +117,7 @@
             float:left;
             margin-right: calc(#{$gutter-horizontal} * 0.7);
             background-image: url("../img/flam-gas-announcement.jpg");
-            object-fit: cover;
+            background-size: cover;
         }
         &-box2, &-box3, &-box4, &-box5{
             width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
@@ -148,7 +148,7 @@
             margin-right: calc(#{$gutter-horizontal} * 0.7);
             margin-bottom: $gutter-horizontal;
             background-image: url("../img/COSMA-Announcement.png");
-            object-fit: cover;
+            background-size: cover;
 
             @include respond(tab-port){
                 width: calc((100% - #{$gutter-horizontal} * 2) / 2);
@@ -164,6 +164,8 @@
         }
         &-box4{
             margin-right: calc(#{$gutter-horizontal} * 0.7);
+            background-image: url("../img/news-chamber-of-commerce.png");
+            background-size: cover;
 
             @include respond(tab-port){
                 width: calc((100% - #{$gutter-horizontal} * 2) / 2);

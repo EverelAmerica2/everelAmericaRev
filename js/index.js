@@ -184,18 +184,10 @@ $("#news-btn3").on("click", newsBoxFunc3);
 function newsBoxFunc4(){
     console.log("get in newsBox!");
     $(`#news-bottom`).empty();
-    $(`#news-bottom`).append(`<h2 class="news-title title-medium margin-bottom-medium text-center">Everel America4</h2>
+    $(`#news-bottom`).append(`<h2 class="news-title title-medium margin-bottom-medium text-center">Everel America: Italian - American Chamber of Commerce</h2>
     <div class="news-content">
-        <img class='news-content-img' src='./img/statue-of-liberty.jpg' />
-        <p>Everel is a leading supplier of electromechanical components for major worldwide household appliance companies.
-            Through its own brands, Molveno, Dreefs, Giem and Signal Lux, Everel offers a wide range of products for household appliances sector: switches, selectors, signal lights, motors and heating elements, custom ventilation units for ovens. Although the focus is mostly on electromechanical items, Everel is also investing in electronic products such as encoders and PCBs.                        
-            <br/>
-            <br/>
-        </p>
-        <p>
-            
-        Innovation, quality and efficiency are the values Everel relies on to satisfy customers and win the competition on the global market. 
-        These are the milestones that make Everel a market leader, with a wide product range and advanced solutions, capable of satisfying the most challenging market requirements.
+        <img class='news-content-img' src='./img/news-chamber-of-commerce.png' />
+        <p>We are pleased and proud to be accepted as a member of the Italian - American Chamber of Commerce. For more than a decade, we have partnered with Italian businesses creating strong alliances with mutually beneficial results. In fact, our expansion with Italian companies comes strictly as a result of personal references and referrals. We welcome and look forward to future collaboration.
         </p>
         
     </div>`);
