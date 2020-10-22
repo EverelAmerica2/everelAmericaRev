@@ -1372,7 +1372,7 @@ a {
     float: left;
     margin-right: calc(2rem * 0.7);
     background-image: url("../img/flam-gas-announcement.jpg");
-    object-fit: cover; }
+    background-size: cover; }
   .section-news .news-box2, .section-news .news-box3, .section-news .news-box4, .section-news .news-box5 {
     width: calc((100% - 3 * 2rem) / 4);
     height: calc((40vh - 2rem) / 2);
@@ -1395,7 +1395,7 @@ a {
     margin-right: calc(2rem * 0.7);
     margin-bottom: 2rem;
     background-image: url("../img/COSMA-Announcement.png");
-    object-fit: cover; }
+    background-size: cover; }
     @media only screen and (max-width: 56.25em) {
       .section-news .news-box2 {
         width: calc((100% - 2rem * 2) / 2);
@@ -1406,7 +1406,9 @@ a {
       .section-news .news-box3 {
         display: none; } }
   .section-news .news-box4 {
-    margin-right: calc(2rem * 0.7); }
+    margin-right: calc(2rem * 0.7);
+    background-image: url("../img/news-chamber-of-commerce.png");
+    background-size: cover; }
     @media only screen and (max-width: 56.25em) {
       .section-news .news-box4 {
         width: calc((100% - 2rem * 2) / 2);
