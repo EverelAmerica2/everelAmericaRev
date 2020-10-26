@@ -1372,12 +1372,11 @@ a {
     float: left;
     margin-right: calc(2rem * 0.7);
     background-image: url("../img/flam-gas-announcement.jpg");
-    background-size: cover; }
+    background-size: 100%; }
   .section-news .news-box2, .section-news .news-box3, .section-news .news-box4, .section-news .news-box5 {
     width: calc((100% - 3 * 2rem) / 4);
     height: calc((40vh - 2rem) / 2);
     float: left;
-    background-color: #777777;
     position: relative; }
   .section-news .news-box6 {
     width: 100%;

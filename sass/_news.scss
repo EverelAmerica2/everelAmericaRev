@@ -50,6 +50,7 @@
             }
         }
 
+
         &-title{
             border-bottom:.2rem solid $color-grey-light-2;
             padding-bottom:1rem;
@@ -117,13 +118,12 @@
             float:left;
             margin-right: calc(#{$gutter-horizontal} * 0.7);
             background-image: url("../img/flam-gas-announcement.jpg");
-            background-size: cover;
+            background-size: 100%;
         }
         &-box2, &-box3, &-box4, &-box5{
             width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
             height: calc((40vh - #{$gutter-horizontal}) / 2);
             float: left;
-            background-color: #777777;
             position: relative;
         }
         &-box6{
@@ -177,6 +177,7 @@
                 display: none;
             }
         }
+
  
     }
 }
