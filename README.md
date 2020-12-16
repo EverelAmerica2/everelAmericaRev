@@ -1,6 +1,6 @@
 # everelAmericaRev
 
-## Folder Structure 
+## Folder Structures 
 
 ```
 everelAmericaRev
